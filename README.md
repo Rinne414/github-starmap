@@ -45,4 +45,8 @@ E2E 需要 Playwright 的 Chromium（`npx playwright install chromium`）；3D �
 
 Vite、TypeScript（無框架）、[3d-force-graph](https://github.com/vasturiano/3d-force-graph)、three-spritetext。three.js 另外切成延遲載入的區塊，首頁只載入約 23 KB（gzip）的 JS。
 
+## 授權
+
+MIT，見 [LICENSE](LICENSE)。
+
 本專案與 GitHub 無關，非官方產品。
