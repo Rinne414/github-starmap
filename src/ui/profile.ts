@@ -12,8 +12,7 @@ import { el } from "./dom";
 export interface ProfileActions {
   onSubject: (subjectKey: string) => void;
   onNode: (nodeId: string) => void;
-  onDownload: () => void;
-  onShare: (button: HTMLButtonElement) => void;
+  onShare: () => void;
 }
 
 export function titleText(result: ScoreResult): string {
@@ -86,16 +85,12 @@ function scoreCard(a: Analysis, r: ScoreResult, actions: ProfileActions): HTMLEl
   title.id = "fun-title";
   const scores = el("div", "scores");
   SCORE_KEYS.forEach((key) => scores.append(scoreRow(key, r)));
-  const buttons = el("div", "actions");
-  const download = el("button", "btn", t("card.download"));
-  download.type = "button";
-  download.id = "download-png";
-  download.addEventListener("click", actions.onDownload);
-  const share = el("button", "btn", t("card.share"));
+  const share = el("button", "btn cta share-cta", t("share.cta"));
   share.type = "button";
-  share.addEventListener("click", () => actions.onShare(share));
-  buttons.append(download, share);
-  card.append(who, title, scores, el("p", "disclaimer", t("card.disclaimer")), buttons, formulas());
+  share.id = "open-share";
+  share.append(el("small", "", t("share.ctaSub")));
+  share.addEventListener("click", actions.onShare);
+  card.append(who, title, scores, el("p", "disclaimer", t("card.disclaimer")), share, formulas());
   return card;
 }
 

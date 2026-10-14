@@ -8,8 +8,8 @@ import { byId } from "./dom";
 
 /** Let the overview camera move settle before the sky goes dark. */
 const START_DELAY_MS = 1400;
-/** Keep the finished map orbiting with the closing line for a moment. */
-const FINAL_HOLD_MS = 3000;
+/** Keep the finished map orbiting with the closing line and the share button for a moment. */
+const FINAL_HOLD_MS = 7000;
 /** Visibility updates touch every node; a few per second look smooth enough. */
 const UPDATE_EVERY_MS = 90;
 
@@ -25,8 +25,9 @@ function dateText(iso: string | null): string {
   return new Date(iso).toLocaleDateString(getLang() === "zh" ? "zh-TW" : "en-US", { year: "numeric", month: "long" });
 }
 
-export function createReplay(view: GraphView, model: GraphModel, beforeStart: () => void): ReplayController {
+export function createReplay(view: GraphView, model: GraphModel, beforeStart: () => void, onShare: () => void): ReplayController {
   const button = byId<HTMLButtonElement>("replay");
+  const shareButton = byId<HTMLButtonElement>("replay-share");
   const overlay = byId("replay-overlay");
   const date = byId("replay-date");
   const count = byId("replay-count");
@@ -38,6 +39,8 @@ export function createReplay(view: GraphView, model: GraphModel, beforeStart: ()
   const show = (step: ReplayStep | null, final = false): void => {
     overlay.hidden = false;
     overlay.classList.toggle("final", final);
+    shareButton.hidden = !final;
+    shareButton.textContent = t("replay.share");
     date.textContent = final ? t("replay.done") : step ? dateText(step.date) : "";
     count.textContent = step ? t("replay.count", { stars: formatNumber(step.stars), repos: formatNumber(step.repos) }) : "";
   };
@@ -92,6 +95,10 @@ export function createReplay(view: GraphView, model: GraphModel, beforeStart: ()
     );
   };
 
+  shareButton.onclick = () => {
+    stop();
+    onShare();
+  };
   button.hidden = false;
   refreshText();
   return {

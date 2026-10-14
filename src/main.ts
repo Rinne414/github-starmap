@@ -9,9 +9,10 @@ import { computeScores, type ScoreResult } from "./score/score";
 import { bindSearch, renderLegend } from "./ui/controls";
 import { type DetailContext, renderDetail } from "./ui/detail";
 import { byId, el } from "./ui/dom";
-import { downloadCard } from "./ui/png";
+import { createPhotoMode } from "./ui/photo";
 import { renderProfile } from "./ui/profile";
 import { createReplay, type ReplayController } from "./ui/replay";
+import { isShareDialogOpen, openShareDialog } from "./ui/shareDialog";
 
 type ViewModule = typeof import("./graph/view");
 /** three.js is most of the bundle, so the landing page loads without it. */
@@ -34,6 +35,9 @@ interface Session {
 
 let session: Session | null = null;
 let loadSeq = 0;
+/** Opened from someone's shared ?u= link: invite the visitor to make their own map. */
+let viaSharedLink = false;
+let visitorDismissed = false;
 
 const landing = byId("landing");
 const status = byId("status");
@@ -86,7 +90,9 @@ function applyStaticText(): void {
   byId<HTMLInputElement>("search").placeholder = t("controls.search");
   byId<HTMLInputElement>("search").setAttribute("aria-label", t("controls.search"));
   byId("open-card").textContent = t("controls.card");
-  byId("another").textContent = t("controls.another");
+  byId("photo").textContent = t("photo.button");
+  byId("visitor-cta").textContent = t("visitor.cta");
+  byId("visitor-close").setAttribute("aria-label", t("detail.close"));
   byId("close").setAttribute("aria-label", t("detail.close"));
 }
 
@@ -121,8 +127,7 @@ function renderPanel(): void {
       ...renderProfile(s.analysis, s.result, {
         onSubject: (key) => selectNode(subjectId(key)),
         onNode: selectNode,
-        onDownload: () => void exportPng(),
-        onShare: (button) => void copyShareLink(button),
+        onShare: openShare,
       }),
     );
   } else if (s.panel === "node" && s.selectedId) {
@@ -165,25 +170,24 @@ function closePanel(): void {
   setUrl(session.analysis.user.login);
 }
 
-async function exportPng(): Promise<void> {
+function openShare(): void {
   if (!session) return;
-  const button = document.getElementById("download-png");
-  try {
-    await downloadCard(session.analysis, session.result, shareUrl(session.analysis.user.login));
-  } catch {
-    if (button) button.textContent = t("card.downloadFailed");
-  }
+  session.replay?.stop();
+  openShareDialog({ analysis: session.analysis, result: session.result, url: shareUrl(session.analysis.user.login) });
 }
 
-async function copyShareLink(button: HTMLButtonElement): Promise<void> {
-  if (!session) return;
-  const url = shareUrl(session.analysis.user.login);
-  try {
-    await navigator.clipboard.writeText(url);
-    button.textContent = t("card.copied");
-  } catch {
-    button.textContent = url;
-  }
+const photo = createPhotoMode(
+  () => {
+    session?.clearSearch();
+    closePanel();
+  },
+  () => {},
+);
+
+function renderVisitor(s: Session): void {
+  const visitor = byId("visitor");
+  visitor.hidden = !viaSharedLink || visitorDismissed;
+  byId("visitor-text").textContent = t("visitor.text", { login: s.analysis.user.login });
 }
 
 // ---------------------------------------------------------------- mount
@@ -200,6 +204,9 @@ function renderControls(s: Session): void {
   const truncated = byId("truncated");
   truncated.hidden = !s.analysis.starsTruncated;
   truncated.textContent = t("controls.truncated");
+  const another = byId("another");
+  another.textContent = viaSharedLink ? t("controls.makeMine") : t("controls.another");
+  another.classList.toggle("cta", viaSharedLink);
   if (s.view) {
     const view = s.view;
     renderLegend(s.model, (g) => view.isVisible(g), (g) => {
@@ -239,12 +246,19 @@ function mount(analysis: Analysis, mod: ViewModule | null): void {
   const s: Session = { analysis, result: computeScores(analysis), model, view, clearSearch: () => {}, replay: null, panel: "closed", selectedId: null };
   session = s;
   byId("replay").hidden = true;
+  byId("photo").hidden = !view;
   if (view) {
-    s.replay = createReplay(view, model, () => {
-      s.clearSearch();
-      closePanel();
-    });
+    s.replay = createReplay(
+      view,
+      model,
+      () => {
+        s.clearSearch();
+        closePanel();
+      },
+      openShare,
+    );
   }
+  renderVisitor(s);
   s.clearSearch = bindSearch(detailContext(s)).clear;
   landing.hidden = true;
   byId("controls").hidden = false;
@@ -259,6 +273,8 @@ function mount(analysis: Analysis, mod: ViewModule | null): void {
 function unmount(): void {
   loadSeq += 1; // a load still in flight must not mount after we left
   session?.replay?.stop();
+  photo.exit();
+  byId("visitor").hidden = true;
   delete document.body.dataset.graph;
   session?.view?.destroy();
   session = null;
@@ -296,14 +312,25 @@ byId("lookup-form").addEventListener("submit", (e) => {
   const login = parseGithubInput(byId<HTMLInputElement>("lookup").value);
   if (!login) return showStatus(t("error.invalid"), true);
   history.pushState(null, "", `${location.pathname}?u=${encodeURIComponent(login)}`);
+  viaSharedLink = false;
   void start(login);
 });
 
-byId("another").addEventListener("click", () => {
+function goToLanding(): void {
   history.pushState(null, "", location.pathname);
   unmount();
   showStatus("");
   byId<HTMLInputElement>("lookup").focus();
+}
+
+byId("another").addEventListener("click", goToLanding);
+byId("visitor-cta").addEventListener("click", goToLanding);
+byId("visitor-close").addEventListener("click", () => {
+  visitorDismissed = true;
+  byId("visitor").hidden = true;
+});
+byId("photo").addEventListener("click", () => {
+  if (session) photo.enter(session.analysis.user.login, shareUrl(session.analysis.user.login));
 });
 
 byId("open-card").addEventListener("click", () => {
@@ -323,6 +350,8 @@ for (const id of ["lang-landing", "lang-toggle"]) {
 
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape" || !session) return;
+  if (isShareDialogOpen()) return; // the dialog closes itself
+  if (photo.active) return photo.exit();
   if (session.replay?.running) return session.replay.stop();
   session.clearSearch();
   closePanel();
@@ -331,6 +360,7 @@ window.addEventListener("resize", () => session?.view?.fitCanvas(panel.classList
 
 function routeFromUrl(): void {
   const login = parseGithubInput(new URLSearchParams(location.search).get("u") ?? "");
+  viaSharedLink = login !== null;
   if (login) void start(login);
   else {
     unmount();
@@ -344,6 +374,7 @@ onLangChange(() => {
   if (!session) return;
   renderControls(session);
   renderPanel();
+  renderVisitor(session);
   session.replay?.refreshText();
   session.view?.refresh();
   if (!session.view) byId("hint").textContent = t("error.webgl");

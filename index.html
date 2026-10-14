@@ -61,6 +61,7 @@
   <div class="actions">
     <button id="replay" class="btn replay-btn" type="button" hidden></button>
     <button id="open-card" class="btn" type="button"></button>
+    <button id="photo" class="btn" type="button" hidden></button>
     <button id="another" class="btn" type="button"></button>
   </div>
 </div>
@@ -75,7 +76,18 @@
 <div id="replay-overlay" class="replay" hidden aria-live="polite">
   <div id="replay-date" class="replay-date"></div>
   <div id="replay-count" class="replay-count"></div>
+  <button id="replay-share" class="btn cta" type="button" hidden></button>
 </div>
+
+<div id="visitor" class="visitor panel" hidden>
+  <span id="visitor-text"></span>
+  <button id="visitor-cta" class="btn cta" type="button"></button>
+  <button id="visitor-close" class="close" type="button">×</button>
+</div>
+
+<div id="watermark" class="watermark" hidden></div>
+<button id="photo-exit" class="photo-exit" type="button" hidden>×</button>
+<div id="photo-toast" class="photo-toast" hidden></div>
 
 <script type="module" src="/src/main.ts"></script>
 </body>

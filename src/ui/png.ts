@@ -1,4 +1,4 @@
-// The share card: a portrait "personal constellation" poster (1080x1350) with
+// The share poster: a portrait "personal constellation" poster (1080x1350) with
 // the account's star chart, its fun title, a five-point score radar and trivia.
 
 import type { Analysis } from "../analysis";
@@ -180,14 +180,18 @@ export async function renderCardCanvas(a: Analysis, r: ScoreResult, shareUrl: st
   return canvas;
 }
 
-export async function downloadCard(a: Analysis, r: ScoreResult, shareUrl: string): Promise<void> {
+export async function renderCardBlob(a: Analysis, r: ScoreResult, shareUrl: string): Promise<Blob> {
   const canvas = await renderCardCanvas(a, r, shareUrl);
   const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
   if (!blob) throw new Error("PNG export failed");
+  return blob;
+}
+
+export function saveBlob(blob: Blob, filename: string): void {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `starmap-${a.user.login}.png`;
+  link.download = filename;
   document.body.append(link);
   link.click();
   link.remove();

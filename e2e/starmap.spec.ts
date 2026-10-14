@@ -11,7 +11,7 @@ const shot = async (page: Page, name: string): Promise<void> => {
 /** The graph sets data-graph="ready" once the first layout settles (5-7 s on software WebGL). */
 const waitForGraph = (page: Page) => expect(page.locator("body")).toHaveAttribute("data-graph", "ready", { timeout: 60_000 });
 
-test.use({ locale: "zh-TW" });
+test.use({ locale: "zh-TW", permissions: ["clipboard-read", "clipboard-write"] });
 
 test("full flow: landing, load, explore, share, switch language", async ({ page }) => {
   const log = await mockGithub(page);
@@ -66,12 +66,32 @@ test("full flow: landing, load, explore, share, switch language", async ({ page 
   await shot(page, "stars-hidden-overview");
   await page.locator('#legend [data-group="star"]').click();
 
+  // typed in by the user, so no visitor invite
+  await expect(page.locator("#visitor")).toBeHidden();
+  await expect(page.locator("#another")).toHaveText("換一個帳號");
+
   await page.click("#open-card");
+  await page.click("#open-share");
+  const dialog = page.locator("#share-dialog");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator(".share-preview img")).toBeVisible({ timeout: 20_000 });
+  expect(await dialog.locator(".share-preview img").evaluate((img: HTMLImageElement) => img.naturalWidth)).toBe(1080);
+  await expect(dialog.locator(".share-text")).toContainText("看看你的 GitHub 是什麼星座");
+  await expect(dialog.locator('[data-network="x"]')).toHaveAttribute("href", /x\.com\/intent\/post\?text=.*u%3Dstardemo/);
+  await shot(page, "share-dialog");
+
+  await dialog.getByRole("button", { name: "複製文案＋連結" }).click();
+  await expect(dialog.getByRole("button", { name: "已複製" })).toBeVisible();
+  expect(await page.evaluate(() => navigator.clipboard.readText())).toContain("?u=stardemo");
+
   const downloadPromise = page.waitForEvent("download");
-  await page.click("#download-png");
+  await dialog.getByRole("button", { name: "下載圖片" }).click();
   const download = await downloadPromise;
   expect(download.suggestedFilename()).toBe(`starmap-${DEMO}.png`);
   await download.saveAs(`${SHOTS}/${String(++step).padStart(2, "0")}-score-card-export.png`);
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
+  await expect(page.locator("#detail")).toHaveClass(/open/); // Esc closed only the dialog
 
   await page.click("#lang-toggle");
   await expect(page.locator("#open-card")).toHaveText("Score card");
@@ -94,9 +114,13 @@ test("time-lapse replay lights the stars up in order, then shows everything agai
   await expect(page.locator("#replay-date")).toHaveText(/\d{4}/);
   await shot(page, "replay-midway");
   await expect(page.locator("#replay-date")).toHaveText("這就是你的星圖", { timeout: 30_000 });
+  await expect(page.locator("#replay-share")).toBeVisible();
   await shot(page, "replay-final");
-  await expect(page.locator("#replay-overlay")).toBeHidden({ timeout: 10_000 });
+  await page.click("#replay-share");
+  await expect(page.locator("#share-dialog")).toBeVisible();
+  await expect(page.locator("#replay-overlay")).toBeHidden();
   await expect(button).toHaveText("▶ 時光回放");
+  await page.keyboard.press("Escape");
 
   // Esc stops a replay early and brings every node back
   await button.click();
@@ -104,6 +128,37 @@ test("time-lapse replay lights the stars up in order, then shows everything agai
   await page.keyboard.press("Escape");
   await expect(button).toHaveText("▶ 時光回放");
   await expect(page.locator("#replay-overlay")).toBeHidden();
+});
+
+test("a visitor from a shared link is invited to make their own map", async ({ page }) => {
+  await mockGithub(page);
+  await page.goto(`/?u=${DEMO}`);
+  await expect(page.locator("#visitor")).toBeVisible();
+  await expect(page.locator("#visitor-text")).toHaveText("這是 @stardemo 的星圖。你的會是什麼星座？");
+  await expect(page.locator("#another")).toHaveText("★ 生成我的星圖");
+  await waitForGraph(page);
+  await page.waitForTimeout(1500);
+  await shot(page, "visitor-invite");
+  await page.click("#visitor-cta");
+  await expect(page.locator("#landing")).toBeVisible();
+  await expect(page.locator("#lookup")).toBeFocused();
+});
+
+test("photo mode hides the panels and keeps a watermark with the link", async ({ page }) => {
+  await mockGithub(page);
+  await page.goto(`/?u=${DEMO}`);
+  await waitForGraph(page);
+  await page.click("#photo");
+  await expect(page.locator("#controls")).toBeHidden();
+  await expect(page.locator("#detail")).toBeHidden();
+  await expect(page.locator("#watermark")).toContainText("@stardemo");
+  await expect(page.locator("#watermark")).toContainText("?u=stardemo");
+  await expect(page.locator("#photo-toast")).toBeHidden({ timeout: 6000 });
+  await page.waitForTimeout(1500);
+  await shot(page, "photo-mode");
+  await page.keyboard.press("Escape");
+  await expect(page.locator("#controls")).toBeVisible();
+  await expect(page.locator("#watermark")).toBeHidden();
 });
 
 test("reload uses the one-hour cache and the share link opens the same view", async ({ page }) => {
