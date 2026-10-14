@@ -11,6 +11,7 @@ import { type DetailContext, renderDetail } from "./ui/detail";
 import { byId, el } from "./ui/dom";
 import { downloadCard } from "./ui/png";
 import { renderProfile } from "./ui/profile";
+import { createReplay, type ReplayController } from "./ui/replay";
 
 type ViewModule = typeof import("./graph/view");
 /** three.js is most of the bundle, so the landing page loads without it. */
@@ -25,6 +26,7 @@ interface Session {
   model: GraphModel;
   view: GraphView | null;
   clearSearch: () => void;
+  replay: ReplayController | null;
   panel: "closed" | "profile" | "node";
   /** Kept here as well as in the view, so details still work without WebGL. */
   selectedId: string | null;
@@ -142,6 +144,7 @@ function openProfile(): void {
 
 function selectNode(id: string): void {
   if (!session?.model.byId.has(id)) return;
+  if (session.replay?.running) session.replay.stop();
   session.panel = "node";
   session.selectedId = id;
   setPanelOpen(true);
@@ -233,8 +236,15 @@ function mount(analysis: Analysis, mod: ViewModule | null): void {
   const model = buildGraph(analysis);
   const pendingHash = safeDecode(location.hash.slice(1));
   const view = createView(mod, model, pendingHash);
-  const s: Session = { analysis, result: computeScores(analysis), model, view, clearSearch: () => {}, panel: "closed", selectedId: null };
+  const s: Session = { analysis, result: computeScores(analysis), model, view, clearSearch: () => {}, replay: null, panel: "closed", selectedId: null };
   session = s;
+  byId("replay").hidden = true;
+  if (view) {
+    s.replay = createReplay(view, model, () => {
+      s.clearSearch();
+      closePanel();
+    });
+  }
   s.clearSearch = bindSearch(detailContext(s)).clear;
   landing.hidden = true;
   byId("controls").hidden = false;
@@ -248,6 +258,7 @@ function mount(analysis: Analysis, mod: ViewModule | null): void {
 
 function unmount(): void {
   loadSeq += 1; // a load still in flight must not mount after we left
+  session?.replay?.stop();
   delete document.body.dataset.graph;
   session?.view?.destroy();
   session = null;
@@ -295,7 +306,16 @@ byId("another").addEventListener("click", () => {
   byId<HTMLInputElement>("lookup").focus();
 });
 
-byId("open-card").addEventListener("click", openProfile);
+byId("open-card").addEventListener("click", () => {
+  session?.replay?.stop();
+  openProfile();
+});
+byId("replay").addEventListener("click", () => {
+  const replay = session?.replay;
+  if (!replay) return;
+  if (replay.running) replay.stop();
+  else replay.start();
+});
 byId("close").addEventListener("click", closePanel);
 for (const id of ["lang-landing", "lang-toggle"]) {
   byId(id).addEventListener("click", () => setLang(getLang() === "zh" ? "en" : "zh"));
@@ -303,6 +323,7 @@ for (const id of ["lang-landing", "lang-toggle"]) {
 
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape" || !session) return;
+  if (session.replay?.running) return session.replay.stop();
   session.clearSearch();
   closePanel();
 });
@@ -323,6 +344,7 @@ onLangChange(() => {
   if (!session) return;
   renderControls(session);
   renderPanel();
+  session.replay?.refreshText();
   session.view?.refresh();
   if (!session.view) byId("hint").textContent = t("error.webgl");
   else byId("hint").textContent = t("controls.hint");

@@ -95,6 +95,11 @@ export const zh = {
   "trivia.stars": "★ {n}",
   "trivia.year": "{year} 年",
   "trivia.repos": "{n} 個 repo",
+  "replay.start": "▶ 時光回放",
+  "replay.stop": "■ 停止回放",
+  "replay.longAgo": "很久以前",
+  "replay.count": "★ {stars} 顆 Star · {repos} 個專案",
+  "replay.done": "這就是你的星圖",
 } as const;
 
 export type StringKey = keyof typeof zh;
@@ -194,4 +199,9 @@ export const en: Record<StringKey, string> = {
   "trivia.stars": "★ {n}",
   "trivia.year": "in {year}",
   "trivia.repos": "{n} repos",
+  "replay.start": "▶ Replay",
+  "replay.stop": "■ Stop replay",
+  "replay.longAgo": "Long ago",
+  "replay.count": "★ {stars} stars · {repos} repos",
+  "replay.done": "This is your star map",
 };

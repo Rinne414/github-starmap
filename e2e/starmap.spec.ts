@@ -80,6 +80,32 @@ test("full flow: landing, load, explore, share, switch language", async ({ page 
   await shot(page, "english");
 });
 
+test("time-lapse replay lights the stars up in order, then shows everything again", async ({ page }) => {
+  await mockGithub(page);
+  await page.goto(`/?u=${DEMO}`);
+  await waitForGraph(page);
+  const button = page.locator("#replay");
+  await expect(button).toHaveText("▶ 時光回放");
+  await button.click();
+  await expect(button).toHaveText("■ 停止回放");
+  await expect(page.locator("#detail")).not.toHaveClass(/open/);
+  await expect(page.locator("#replay-count")).toContainText("★", { timeout: 10_000 });
+  await page.waitForTimeout(6000);
+  await expect(page.locator("#replay-date")).toHaveText(/\d{4}/);
+  await shot(page, "replay-midway");
+  await expect(page.locator("#replay-date")).toHaveText("這就是你的星圖", { timeout: 30_000 });
+  await shot(page, "replay-final");
+  await expect(page.locator("#replay-overlay")).toBeHidden({ timeout: 10_000 });
+  await expect(button).toHaveText("▶ 時光回放");
+
+  // Esc stops a replay early and brings every node back
+  await button.click();
+  await expect(button).toHaveText("■ 停止回放");
+  await page.keyboard.press("Escape");
+  await expect(button).toHaveText("▶ 時光回放");
+  await expect(page.locator("#replay-overlay")).toBeHidden();
+});
+
 test("reload uses the one-hour cache and the share link opens the same view", async ({ page }) => {
   const log = await mockGithub(page);
   await page.goto(`/?u=${DEMO}`);

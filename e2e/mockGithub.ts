@@ -44,7 +44,7 @@ function ownRepos(now: number) {
     ["my-blog", "Personal site", [], "HTML", 30],
   ]
     .map(([name, description, topics, language, days]) =>
-      rawRepo(`${DEMO}/${name}`, { description, topics, language, stargazers_count: 3, pushed_at: recent(days as number) }),
+      rawRepo(`${DEMO}/${name}`, { description, topics, language, stargazers_count: 3, pushed_at: recent(days as number), created_at: recent((days as number) * 4 + 30) }),
     )
     .concat([rawRepo(`${DEMO}/forked-yt-dlp`, { description: "fork of a downloader", fork: true, topics: [], pushed_at: recent(1) })]);
 }

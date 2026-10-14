@@ -9,6 +9,8 @@ export interface RepoInfo {
   stars: number;
   fork: boolean;
   pushedAt: string | null;
+  /** Missing in profiles cached before the replay feature existed. */
+  createdAt?: string | null;
 }
 
 export interface StarInfo extends RepoInfo {

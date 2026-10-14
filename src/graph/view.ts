@@ -19,6 +19,8 @@ const PANEL_SPACE = 412;
 const WIDE_MIN = 760;
 /** Without a time cap the layout keeps drifting for a long time on slow machines. */
 const COOLDOWN_MS = 5000;
+/** One full turn around the map in about 45 seconds during the replay. */
+const ORBIT_RAD_PER_MS = (Math.PI * 2) / 45000;
 
 type Graph = ForceGraph3DInstance<GNode, GLink>;
 
@@ -53,6 +55,9 @@ export class GraphView {
   private visibleCount = 0;
   private destroyed = false;
   private firstLayoutDone = false;
+  /** During the replay only these nodes are drawn; null means everything. */
+  private revealed: Set<string> | null = null;
+  private orbitFrame = 0;
 
   constructor(private readonly opts: GraphViewOptions) {
     this.graph = (new ForceGraph3D(opts.container) as unknown as Graph)
@@ -64,6 +69,8 @@ export class GraphView {
       .nodeOpacity(1)
       .nodeResolution(12)
       .nodeLabel((n) => escapeHtml(opts.tooltip(n)).replace(/\n/g, "<br>"))
+      .nodeVisibility((n) => this.isRevealed(n.id))
+      .linkVisibility((l) => this.isRevealed(endId(l.source)) && this.isRevealed(endId(l.target)))
       .nodeThreeObjectExtend(true)
       .linkColor((l) => this.linkColor(l))
       .linkWidth((l) => (this.isLinkLit(l) ? 0.6 : 0))
@@ -144,10 +151,42 @@ export class GraphView {
       .nodeThreeObject(((n: GNode) => this.labelFor(n)) as unknown as (n: GNode) => Object3D);
   }
 
+  /** Limits drawing to the given nodes (replay), or shows everything again with null. */
+  setRevealed(ids: Set<string> | null): void {
+    this.revealed = ids;
+    this.graph.nodeVisibility(this.graph.nodeVisibility()).linkVisibility(this.graph.linkVisibility());
+  }
+
+  /** Slowly circles the camera around the centre of the map. */
+  startOrbit(): void {
+    this.stopOrbit();
+    const c = this.graph.cameraPosition();
+    const radius = Math.hypot(c.x, c.z) || 1;
+    const startAngle = Math.atan2(c.z, c.x);
+    const start = performance.now();
+    const step = (now: number): void => {
+      if (this.destroyed) return;
+      const angle = startAngle + (now - start) * ORBIT_RAD_PER_MS;
+      this.graph.cameraPosition({ x: radius * Math.cos(angle), y: c.y, z: radius * Math.sin(angle) }, { x: 0, y: 0, z: 0 });
+      this.orbitFrame = requestAnimationFrame(step);
+    };
+    this.orbitFrame = requestAnimationFrame(step);
+  }
+
+  stopOrbit(): void {
+    cancelAnimationFrame(this.orbitFrame);
+    this.orbitFrame = 0;
+  }
+
   destroy(): void {
+    this.stopOrbit();
     this.destroyed = true;
     this.graph._destructor();
     this.opts.container.replaceChildren();
+  }
+
+  private isRevealed(id: string): boolean {
+    return this.revealed === null || this.revealed.has(id);
   }
 
   private isLit(id: string): boolean {

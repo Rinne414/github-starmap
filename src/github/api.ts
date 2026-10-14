@@ -44,6 +44,7 @@ interface RawRepo {
   stargazers_count: number;
   fork: boolean;
   pushed_at: string | null;
+  created_at?: string | null;
 }
 
 async function bodyMentionsRateLimit(res: Response): Promise<boolean> {
@@ -99,6 +100,7 @@ function toRepo(raw: RawRepo): RepoInfo {
     stars: raw.stargazers_count,
     fork: raw.fork,
     pushedAt: raw.pushed_at,
+    createdAt: raw.created_at ?? null,
   };
 }
 

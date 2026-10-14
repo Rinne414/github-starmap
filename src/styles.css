@@ -189,6 +189,21 @@ div.trivia-row { cursor: default; }
 .trivia-value { flex: none; font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent); }
 .subject-chip .count { font-family: var(--mono); font-size: 11px; color: var(--muted); }
 
+.replay-btn { border-color: rgba(245, 185, 66, 0.45); color: #ffe2a3; }
+.replay-btn[aria-pressed="true"] { background: rgba(245, 185, 66, 0.14); }
+.replay {
+  position: fixed; z-index: 2; left: 50%; bottom: 72px; transform: translateX(-50%);
+  text-align: center; pointer-events: none; white-space: nowrap;
+}
+.replay-date {
+  font-size: clamp(36px, 7vw, 84px); font-weight: 800; letter-spacing: -0.01em; line-height: 1.05;
+  background: linear-gradient(100deg, #f5b942, #ffe2a3 55%, #c084fc); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.8));
+}
+.replay.final .replay-date { animation: rise 0.8s var(--ease) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.replay-count { margin-top: 6px; font-family: var(--mono); font-size: 14px; color: var(--body); text-shadow: 0 1px 8px #000; }
+
 #hint { left: 16px; bottom: 16px; padding: 8px 12px; font-size: 12px; color: var(--muted); max-width: calc(100vw - 32px); }
 #hint.warn { color: var(--accent); }
 
@@ -196,6 +211,7 @@ div.trivia-row { cursor: default; }
   #controls { right: 16px; width: auto; max-height: 50vh; }
   #detail { top: auto; left: 16px; right: 16px; height: 55vh; width: auto; }
   #hint { display: none; }
+  .replay { bottom: 24px; }
   body.detail-open #legend, body.detail-open #counts, body.detail-open .actions, body.detail-open #truncated { display: none; }
   .lookup { flex-direction: column; }
 }
