@@ -3,6 +3,7 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "rewrites": [{ "source": "/s/:login", "destination": "/api/share?login=:login" }],
   "headers": [
     {
       "source": "/(.*)",

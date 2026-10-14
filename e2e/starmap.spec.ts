@@ -77,12 +77,13 @@ test("full flow: landing, load, explore, share, switch language", async ({ page 
   await expect(dialog.locator(".share-preview img")).toBeVisible({ timeout: 20_000 });
   expect(await dialog.locator(".share-preview img").evaluate((img: HTMLImageElement) => img.naturalWidth)).toBe(1080);
   await expect(dialog.locator(".share-text")).toContainText("看看你的 GitHub 是什麼星座");
-  await expect(dialog.locator('[data-network="x"]')).toHaveAttribute("href", /x\.com\/intent\/post\?text=.*u%3Dstardemo/);
+  await expect(dialog.locator('[data-network="x"]')).toHaveAttribute("href", /x\.com\/intent\/post\?text=.*%2Fs%2Fstardemo%3Fm%3D/);
   await shot(page, "share-dialog");
 
   await dialog.getByRole("button", { name: "複製文案＋連結" }).click();
   await expect(dialog.getByRole("button", { name: "已複製" })).toBeVisible();
-  expect(await page.evaluate(() => navigator.clipboard.readText())).toContain("?u=stardemo");
+  // the shared link carries the title and scores so its preview card can show them
+  expect(await page.evaluate(() => navigator.clipboard.readText())).toMatch(/\/s\/stardemo\?m=activity&c=ai-image&s=\d+(%2C\d+){4}&l=zh/);
 
   const downloadPromise = page.waitForEvent("download");
   await dialog.getByRole("button", { name: "下載圖片" }).click();

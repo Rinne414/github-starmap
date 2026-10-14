@@ -13,6 +13,7 @@ import { createPhotoMode } from "./ui/photo";
 import { renderProfile } from "./ui/profile";
 import { createReplay, type ReplayController } from "./ui/replay";
 import { isShareDialogOpen, openShareDialog } from "./ui/shareDialog";
+import { shareLinkFor } from "./share/og";
 
 type ViewModule = typeof import("./graph/view");
 /** three.js is most of the bundle, so the landing page loads without it. */
@@ -173,7 +174,9 @@ function closePanel(): void {
 function openShare(): void {
   if (!session) return;
   session.replay?.stop();
-  openShareDialog({ analysis: session.analysis, result: session.result, url: shareUrl(session.analysis.user.login) });
+  const { analysis, result } = session;
+  const preview = { login: analysis.user.login, lang: getLang(), title: result.title, scores: result.scores };
+  openShareDialog({ analysis, result, url: shareUrl(analysis.user.login), shareLink: shareLinkFor(location.origin, preview) });
 }
 
 const photo = createPhotoMode(

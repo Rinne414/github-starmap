@@ -17,7 +17,10 @@ const posters = new Map<string, Promise<Blob>>();
 export interface ShareContext {
   analysis: Analysis;
   result: ScoreResult;
+  /** The map link printed on the poster (short, ?u=login). */
   url: string;
+  /** The link people share: /s/<login>?... gets a per-account preview card. */
+  shareLink: string;
 }
 
 function flash(button: HTMLButtonElement, key: StringKey): void {
@@ -57,7 +60,7 @@ function poster(ctx: ShareContext): Promise<Blob> {
 }
 
 function networkRow(ctx: ShareContext, text: string): HTMLElement {
-  const links = shareLinks(ctx.url, text);
+  const links = shareLinks(ctx.shareLink, text);
   const row = el("div", "share-networks");
   row.append(el("span", "share-on", t("share.on")));
   for (const [name, href] of [["X", links.x], ["Threads", links.threads], ["Facebook", links.facebook], ["LINE", links.line]] as const) {
@@ -70,7 +73,7 @@ function networkRow(ctx: ShareContext, text: string): HTMLElement {
 
 function actions(ctx: ShareContext, text: string, blob: Promise<Blob>): HTMLButtonElement[] {
   const filename = `starmap-${ctx.analysis.user.login}.png`;
-  const fullText = `${text} ${ctx.url}`;
+  const fullText = `${text} ${ctx.shareLink}`;
   const list: HTMLButtonElement[] = [];
   const canShareFiles = typeof navigator.canShare === "function" && navigator.canShare({ files: [new File([""], filename, { type: "image/png" })] });
   if (canShareFiles) {
@@ -141,7 +144,7 @@ export function openShareDialog(ctx: ShareContext): void {
   primary.append(...buttons);
   const hint = matchMedia("(pointer: coarse)").matches ? t("share.hintTouch") : t("share.hintMouse");
   const side = el("div", "share-side");
-  side.append(el("p", "share-text", `${text} ${ctx.url}`), primary, networkRow(ctx, text), el("p", "share-hint", hint));
+  side.append(el("p", "share-text", `${text} ${ctx.shareLink}`), primary, networkRow(ctx, text), el("p", "share-hint", hint));
 
   const body = el("div", "share-body");
   body.append(figure, side);

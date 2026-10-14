@@ -1,12 +1,12 @@
 // The profile view of the side panel: fun score card, formulas and insights.
 
 import type { Analysis } from "../analysis";
-import { CATEGORY_BY_KEY, OTHER } from "../classify/taxonomy";
-import { categoryName, formatNumber, pick, subjectName, t } from "../i18n/i18n";
+import { categoryName, formatNumber, getLang, subjectName, t } from "../i18n/i18n";
 import type { StringKey } from "../i18n/strings";
 import { type Fact, pickFacts } from "../score/facts";
 import { buildInsights, type SubjectCount } from "../score/insights";
 import { SCORE_KEYS, type ScoreKey, type ScoreResult, TOTAL_SUBJECTS } from "../score/score";
+import { composeTitle } from "../share/title";
 import { el } from "./dom";
 
 export interface ProfileActions {
@@ -15,11 +15,7 @@ export interface ProfileActions {
   onShare: () => void;
 }
 
-export function titleText(result: ScoreResult): string {
-  if (result.title.rookie) return t("title.rookie");
-  const noun = pick((CATEGORY_BY_KEY.get(result.title.category) ?? CATEGORY_BY_KEY.get(OTHER)!).noun);
-  return t("title.join", { modifier: t(`title.${result.title.modifier}` as StringKey), noun });
-}
+export const titleText = (result: ScoreResult): string => composeTitle(result.title, getLang());
 
 function scoreFact(key: ScoreKey, r: ScoreResult): string {
   const f = r.facts;

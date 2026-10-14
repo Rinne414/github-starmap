@@ -6,8 +6,9 @@ Paste a GitHub account and get its repos and stars as a 3D star map, plus a just
 
 ## 隱私：只讀公開資料
 
-- 網站是純靜態頁面，**沒有後端、不存任何資料**，也不需要登入。
+- **不存任何資料**，也不需要登入。星圖、分類與評分都在你的瀏覽器裡算。
 - 瀏覽器直接呼叫 GitHub 公開 API（不帶 token）：`/users/{u}`、`/users/{u}/repos?type=owner`、`/users/{u}/starred`。
+- 唯一的伺服器端程式是分享連結的預覽圖（`api/og.ts`、`api/share.ts`）：分享網址 `/s/<帳號>?m=&c=&s=` 本身帶著稱號代碼和分數，函式只用這些產生圖片；它不呼叫 GitHub API、沒有金鑰、不寫入任何資料，只會向 github.com 取那個帳號的公開頭像。
 - 讀到的結果只存在**你自己的瀏覽器**（localStorage，1 小時後失效），重整不必重抓。
 - GitHub 限制每位訪客每小時 60 次查詢；查一個帳號約需 3～21 次（Star 最多讀 1,000 個）。
 
@@ -31,6 +32,7 @@ Paste a GitHub account and get its repos and stars as a 3D star map, plus a just
   稱號＝最高分那一項的修飾語＋最大分類的身分，例如「雜食系煉圖師」。fork 不計分。
 - 分享：
   - 網址 `?u=帳號` 開啟就載入；從別人的連結進來時會邀請你生成自己的星圖。
+  - 分享出去的連結會帶專屬預覽卡：貼到 X、Discord、LINE、Facebook 時直接顯示那個人的頭像、稱號與五角雷達。
   - 「我的星座海報」先預覽 1080×1350 海報（個人星座圖、五角雷達、星圖小發現），再用手機原生分享、下載、複製圖片、複製文案＋連結，或分享到 X／Threads／Facebook／LINE。
   - 時光回放：星星依收藏與建立時間依序亮起，播完可直接分享。
   - 拍照模式：藏起所有面板，只留星圖與帶網址的浮水印，方便截圖或錄影。
@@ -49,7 +51,7 @@ E2E 需要 Playwright 的 Chromium（`npx playwright install chromium`）；3D �
 
 ## 技術
 
-Vite、TypeScript（無框架）、[3d-force-graph](https://github.com/vasturiano/3d-force-graph)、three-spritetext。three.js 另外切成延遲載入的區塊，首頁只載入約 23 KB（gzip）的 JS。
+Vite、TypeScript（無框架）、[3d-force-graph](https://github.com/vasturiano/3d-force-graph)、three-spritetext。預覽圖用 [@vercel/og](https://vercel.com/docs/og-image-generation)；中文字型是 Noto Sans TC（SIL OFL 1.1，見 `api/_fonts/OFL.txt`）只取預覽圖會出現的 208 個字，重建方式見 `scripts/build-og-fonts.py`。three.js 另外切成延遲載入的區塊，首頁只載入約 23 KB（gzip）的 JS。
 
 ## 授權
 
