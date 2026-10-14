@@ -76,6 +76,7 @@ function metaLine(n: GNode): HTMLElement | null {
     repo.language,
     `★ ${formatNumber(repo.stars)}`,
     repo.fork ? t("detail.fork") : null,
+    n.item?.guessed ? t("detail.guessed") : null,
     repo.pushedAt ? t("detail.updated", { date: day(repo.pushedAt) }) : null,
     n.item?.starredAt ? t("detail.starred", { date: day(n.item.starredAt) }) : null,
   ].filter((p): p is string => Boolean(p));

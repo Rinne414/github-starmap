@@ -1,4 +1,4 @@
-import { CATEGORY_KEYWORDS, type KeywordEntry, STACK_TOPICS, SUBJECT_KEYWORDS } from "./keywords";
+import { CATEGORY_KEYWORDS, type KeywordEntry, LANGUAGE_FALLBACK, STACK_TOPICS, SUBJECT_KEYWORDS } from "./keywords";
 import { CATEGORY_ORDER, OTHER, SUBJECTS } from "./taxonomy";
 
 export interface Classifiable {
@@ -6,12 +6,16 @@ export interface Classifiable {
   description: string | null;
   topics: readonly string[];
   language: string | null;
+  /** Lets the classifier spot profile README repos (owner/owner, owner/.github). */
+  owner?: string;
 }
 
 export interface Classification {
   /** 0-3 subject keys, best first. */
   subjects: string[];
   category: string;
+  /** True when only the main language decided the category. */
+  guessed: boolean;
 }
 
 /** How much a keyword hit counts, by where it was found. */
@@ -78,11 +82,15 @@ interface Fields {
   language: string;
 }
 
+const isProfileRepo = (item: Classifiable): boolean =>
+  item.name === ".github" || (item.owner !== undefined && item.name.toLowerCase() === item.owner.toLowerCase());
+
 function toFields(item: Classifiable): Fields {
   const topics = item.topics.filter((t) => !STACK_TOPICS.has(t.toLowerCase()));
+  const profile = isProfileRepo(item) ? " | github profile" : "";
   return {
     topics: topics.map(normalize).join(" | "),
-    name: `${normalize(item.name)} | ${normalize(splitCamel(item.name))}`,
+    name: `${normalize(item.name)} | ${normalize(splitCamel(item.name))}${profile}`,
     description: normalize(item.description ?? ""),
     language: item.language ?? "",
   };
@@ -147,7 +155,9 @@ export function classify(item: Classifiable): Classification {
     .filter((s) => s.score >= top * SECONDARY_RATIO)
     .slice(0, MAX_SUBJECTS)
     .map((s) => s.key);
-  return { subjects, category: pickCategory(categoryTotals(ranked, fields)) };
+  const category = pickCategory(categoryTotals(ranked, fields));
+  const fallback = category === OTHER && subjects.length === 0 ? LANGUAGE_FALLBACK[item.language ?? ""] : undefined;
+  return { subjects, category: fallback ?? category, guessed: fallback !== undefined };
 }
 
 /** Scores behind a classification, for tests and keyword tuning. */

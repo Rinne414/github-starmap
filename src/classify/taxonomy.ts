@@ -129,17 +129,22 @@ const SUBJECT_GROUPS: Record<string, [key: string, zh: string, en: string][]> = 
     ["chemistry", "化學教學", "Chemistry Teaching"],
     ["classroom", "課堂活動與測驗", "Classroom Activities & Quizzes"],
     ["awesome", "Awesome 清單", "Awesome Lists"],
+    ["coding-practice", "程式練習", "Coding Practice"],
   ],
   frontend: [
     ["ui-library", "UI 元件庫", "UI Component Libraries"],
     ["design-system", "設計系統", "Design Systems"],
     ["web-3d", "3D 與動態網頁", "3D & Motion Web"],
+    ["frontend-framework", "前端框架", "Frontend Frameworks"],
+    ["sites", "網站與部落格", "Websites & Blogs"],
+    ["browser-extension", "瀏覽器擴充", "Browser Extensions"],
   ],
   system: [
     ["windows-tools", "Windows 工具", "Windows Tools"],
     ["terminal", "終端機", "Terminal"],
     ["network-proxy", "網路代理", "Network Proxy"],
     ["productivity", "桌面生產力", "Desktop Productivity"],
+    ["translation", "翻譯與 i18n", "Translation & i18n"],
   ],
   backend: [
     ["web-framework", "Web 框架", "Web Frameworks"],
@@ -163,6 +168,10 @@ const SUBJECT_GROUPS: Record<string, [key: string, zh: string, en: string][]> = 
     ["programming-language", "程式語言", "Programming Languages"],
     ["editor-ide", "編輯器與 IDE", "Editors & IDEs"],
     ["build-test", "建置與測試", "Build & Test"],
+    ["libraries", "程式庫與套件", "Libraries & Packages"],
+    ["templates", "範本與範例", "Templates & Examples"],
+    ["git-tools", "Git 與 GitHub 工具", "Git & GitHub Tools"],
+    ["security", "資安與驗證", "Security & Auth"],
   ],
   [OTHER]: [
     ["business", "商業與變現", "Business & Monetization"],

@@ -11,6 +11,8 @@ export interface Item {
   starredAt: string | null;
   subjects: string[];
   category: string;
+  /** Category guessed from the main language only; left out of focus and the title. */
+  guessed: boolean;
 }
 
 export interface Analysis {
@@ -25,8 +27,8 @@ export interface Analysis {
 }
 
 function toItem(kind: ItemKind, repo: RepoInfo, starredAt: string | null): Item {
-  const { subjects, category } = classify(repo);
-  return { id: `${kind}:${repo.fullName}`, kind, repo, starredAt, subjects, category };
+  const { subjects, category, guessed } = classify(repo);
+  return { id: `${kind}:${repo.fullName}`, kind, repo, starredAt, subjects, category, guessed };
 }
 
 export function analyze(profile: Profile): Analysis {

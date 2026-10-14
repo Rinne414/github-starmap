@@ -51,7 +51,8 @@ const isRecent = (iso: string | null, now: Date): boolean =>
 function topCategory(a: Analysis): { key: string | null; count: number; total: number } {
   const counts = new Map<string, number>();
   for (const item of [...a.own, ...a.stars]) {
-    if (item.category !== OTHER) counts.set(item.category, (counts.get(item.category) ?? 0) + 1);
+    // a guess from the language alone should not decide who you are
+    if (item.category !== OTHER && !item.guessed) counts.set(item.category, (counts.get(item.category) ?? 0) + 1);
   }
   let key: string | null = null;
   let count = 0;

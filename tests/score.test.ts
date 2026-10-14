@@ -96,6 +96,17 @@ describe("computeScores", () => {
     expect(r.title).toEqual({ rookie: false, modifier: "focus", category: "ai-image" });
   });
 
+  test("language-only guesses do not decide focus or the title", () => {
+    const stars = [
+      ...Array.from({ length: 8 }, () => item("star", [], "devtools", { guessed: true })),
+      ...Array.from({ length: 3 }, () => item("star", ["tts"], "audio")),
+    ];
+    const r = computeScores(analysis([], stars), NOW);
+    expect(r.facts.topCategory).toBe("audio");
+    expect(r.facts.classifiedItems).toBe(3);
+    expect(r.scores.focus).toBeNull(); // fewer than 5 items with real signals
+  });
+
   test("forks never count", () => {
     const fork = item("repo", ["comfyui"], "ai-image", { repo: { fork: true, pushedAt: daysAgo(1) } });
     const stars = Array.from({ length: 10 }, () => item("star", ["comfyui"], "ai-image"));

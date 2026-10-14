@@ -14,7 +14,9 @@ Paste a GitHub account and get its repos and stars as a 3D star map, plus a just
 ## 功能
 
 - 3D 圖：點分類或主題，側邊面板列出相關的專案與 Star；可搜尋、點圖例隱藏群組，按 Esc 回全景。
-- 規則分類：20 個分類、82 個主題，比對 topics（權重最高）、repo 名稱、描述與語言。用 257 個人工標註的 Star 測過：分類命中率 84.4%，主題至少命中一個 94.3%。
+- 規則分類：20 個分類、91 個主題，比對 topics（權重最高）、repo 名稱、描述與語言；完全沒有關鍵字時才依主要語言推測分類（不給主題，也不算進專注度與稱號）。兩組測試資料：
+  - 257 個人工標註的 Star（偏 AI 繪圖與 AI 工具）：分類命中率 82.9%，主題至少命中一個 94.3%。
+  - 15 位不同領域知名開發者的公開 repo 與 Star 抽樣 1,330 筆：落在「其他」的自己 repo 5.6%、Star 1.7%（調整前分別是 57% 與 42%）。
 - 洞察：最常收藏的主題、做過也收藏的主題、只收藏還沒動手的主題。
 - 趣味評分（好玩而已，不是正式評分，公式在頁面上公開）：
 
@@ -22,8 +24,8 @@ Paste a GitHub account and get its repos and stars as a 3D star map, plus a just
 |---|---|
 | 動手率 | 收藏涉及的主題中，自己的 repo 也有的比例 |
 | 挖寶指數 | 收藏的 repo 中，星數不到 1,000 的比例 |
-| 專注度 | 最大分類在「Star＋自己的 repo」中的占比（不含「其他」） |
-| 收藏廣度 | 收藏涵蓋的主題數 ÷ 全部 82 個主題 |
+| 專注度 | 最大分類在「Star＋自己的 repo」中的占比（不含「其他」和只靠語言推測分類的項目） |
+| 收藏廣度 | 收藏涵蓋的主題數 ÷ 全部 91 個主題 |
 | 近期活躍度 | 60 × min(1, 近 90 天推送過的 repo 數 ÷ 5) ＋ 40 × min(1, 近 90 天新收藏數 ÷ 30) |
 
   稱號＝最高分那一項的修飾語＋最大分類的身分，例如「雜食系煉圖師」。fork 不計分。
@@ -34,7 +36,7 @@ Paste a GitHub account and get its repos and stars as a 3D star map, plus a just
 ```bash
 npm install
 npm run dev          # 本機開發
-npm test             # Vitest：連結解析、分類命中率、評分、API 與快取
+npm test             # Vitest：連結解析、分類命中率、「其他」比例、評分、API 與快取
 npm run test:e2e     # Playwright：以攔截路由模擬 GitHub API，不耗真實額度
 npm run build        # 型別檢查 + 打包到 dist/
 ```
