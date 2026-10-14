@@ -1,16 +1,22 @@
-// Draws the score card onto a canvas and downloads it as a PNG.
+// The share card: a portrait "personal constellation" poster (1080x1350) with
+// the account's star chart, its fun title, a five-point score radar and trivia.
 
 import type { Analysis } from "../analysis";
-import { t } from "../i18n/i18n";
-import { SCORE_KEYS, type ScoreResult } from "../score/score";
-import { scoreFact, scoreLabel, titleText } from "./profile";
+import { formatNumber, t } from "../i18n/i18n";
+import type { StringKey } from "../i18n/strings";
+import { type Fact, pickFacts } from "../score/facts";
+import type { ScoreResult } from "../score/score";
+import { drawRadar } from "./card/radar";
+import { drawBackdrop, drawChart, drawConstellationNames, drawPlanisphere, FONT } from "./card/sky";
+import { layoutStarChart } from "./card/starChart";
+import { scoreLabel, titleText } from "./profile";
 
-const W = 1200;
-const H = 630;
-const PAD = 72;
-const FONT = '"Noto Sans TC", "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif';
+const W = 1080;
+const H = 1350;
+const PAD = 56;
+const SKY = { cx: W / 2, cy: 470, r: 372 };
 const AVATAR_TIMEOUT_MS = 3000;
-const COLORS = { bg: "#0a0d12", text: "#e7ecf3", muted: "#8b97a8", track: "rgba(255,255,255,0.08)", accent: "#f5b942", purple: "#c084fc" };
+const C = { text: "#e7ecf3", body: "#cfd6e0", muted: "#8b97a8", gold: "#ffd27a", own: "#ffd680", star: "#bed6ff" };
 
 function loadAvatar(url: string): Promise<HTMLImageElement | null> {
   return new Promise((resolve) => {
@@ -29,82 +35,127 @@ function loadAvatar(url: string): Promise<HTMLImageElement | null> {
   });
 }
 
-function drawBackground(ctx: CanvasRenderingContext2D): void {
-  ctx.fillStyle = COLORS.bg;
-  ctx.fillRect(0, 0, W, H);
-  const glow = ctx.createRadialGradient(W * 0.85, H * 0.1, 10, W * 0.85, H * 0.1, W * 0.7);
-  glow.addColorStop(0, "rgba(192,132,252,0.22)");
-  glow.addColorStop(1, "rgba(192,132,252,0)");
-  ctx.fillStyle = glow;
-  ctx.fillRect(0, 0, W, H);
-  // fixed pseudo-random star field, so every export looks the same
-  let seed = 7;
-  const rand = (): number => ((seed = (seed * 16807) % 2147483647) / 2147483647);
-  for (let i = 0; i < 140; i += 1) {
-    ctx.fillStyle = `rgba(160,190,255,${0.15 + rand() * 0.5})`;
-    ctx.beginPath();
-    ctx.arc(rand() * W, rand() * H, rand() * 1.6 + 0.3, 0, Math.PI * 2);
-    ctx.fill();
-  }
+function fit(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string {
+  if (ctx.measureText(text).width <= maxWidth) return text;
+  let cut = text;
+  while (cut.length > 1 && ctx.measureText(`${cut}…`).width > maxWidth) cut = cut.slice(0, -1);
+  return `${cut}…`;
 }
 
-function drawHeader(ctx: CanvasRenderingContext2D, a: Analysis, r: ScoreResult, avatar: HTMLImageElement | null): void {
-  const size = 88;
-  const textX = avatar ? PAD + size + 24 : PAD;
+function drawHeader(ctx: CanvasRenderingContext2D, a: Analysis, avatar: HTMLImageElement | null): void {
+  const size = 72;
+  const textX = avatar ? PAD + size + 18 : PAD;
   if (avatar) {
     ctx.save();
     ctx.beginPath();
-    ctx.arc(PAD + size / 2, PAD + size / 2, size / 2, 0, Math.PI * 2);
+    ctx.arc(PAD + size / 2, 48 + size / 2, size / 2, 0, Math.PI * 2);
     ctx.clip();
-    ctx.drawImage(avatar, PAD, PAD, size, size);
+    ctx.drawImage(avatar, PAD, 48, size, size);
     ctx.restore();
   }
-  ctx.fillStyle = COLORS.text;
-  ctx.font = `600 34px ${FONT}`;
-  ctx.fillText(`@${a.user.login}`, textX, PAD + 40);
-  ctx.fillStyle = COLORS.muted;
-  ctx.font = `400 22px ${FONT}`;
-  ctx.fillText(`${t("app.title")} · ${t("card.heading")}`, textX, PAD + 76);
-  ctx.fillStyle = COLORS.accent;
-  ctx.font = `700 54px ${FONT}`;
-  ctx.fillText(titleText(r), PAD, PAD + 170, W - PAD * 2);
+  ctx.textAlign = "left";
+  ctx.fillStyle = C.text;
+  ctx.font = `700 34px ${FONT}`;
+  ctx.fillText(fit(ctx, `@${a.user.login}`, 520), textX, 86);
+  if (a.user.name) {
+    ctx.fillStyle = C.muted;
+    ctx.font = `400 19px ${FONT}`;
+    ctx.fillText(fit(ctx, a.user.name, 520), textX, 114);
+  }
+  ctx.textAlign = "right";
+  ctx.fillStyle = C.body;
+  ctx.font = `700 22px ${FONT}`;
+  ctx.fillText(t("app.title"), W - PAD, 80);
+  ctx.fillStyle = C.muted;
+  ctx.font = `500 14px ${FONT}`;
+  ctx.fillText("S T A R M A P", W - PAD, 104);
+  ctx.textAlign = "left";
 }
 
-function drawScores(ctx: CanvasRenderingContext2D, r: ScoreResult): void {
-  const top = PAD + 225;
-  const rowH = 56;
-  const barX = PAD + 230;
-  const barW = W - PAD * 2 - 230 - 90;
-  SCORE_KEYS.forEach((key, i) => {
-    const y = top + i * rowH;
-    const value = r.scores[key];
-    ctx.fillStyle = COLORS.text;
-    ctx.font = `500 24px ${FONT}`;
-    ctx.fillText(scoreLabel(key), PAD, y + 10);
-    ctx.fillStyle = COLORS.muted;
-    ctx.font = `400 15px ${FONT}`;
-    ctx.fillText(value === null ? "—" : scoreFact(key, r), PAD, y + 32, 220);
-    ctx.fillStyle = COLORS.track;
-    ctx.fillRect(barX, y - 4, barW, 12);
-    const fill = ctx.createLinearGradient(barX, 0, barX + barW, 0);
-    fill.addColorStop(0, COLORS.purple);
-    fill.addColorStop(1, COLORS.accent);
-    ctx.fillStyle = fill;
-    ctx.fillRect(barX, y - 4, (barW * (value ?? 0)) / 100, 12);
-    ctx.fillStyle = COLORS.text;
-    ctx.font = `700 28px ${FONT}`;
+function drawTitle(ctx: CanvasRenderingContext2D, r: ScoreResult): void {
+  // fade the sky out under the text
+  const fade = ctx.createLinearGradient(0, 780, 0, 900);
+  fade.addColorStop(0, "rgba(5,7,12,0)");
+  fade.addColorStop(1, "rgba(5,7,12,1)");
+  ctx.fillStyle = fade;
+  ctx.fillRect(0, 780, W, H - 780);
+  ctx.fillStyle = C.muted;
+  ctx.font = `500 18px ${FONT}`;
+  ctx.fillText(t("png.constellation"), PAD, 890);
+  const title = titleText(r);
+  let size = 64;
+  ctx.font = `800 ${size}px ${FONT}`;
+  while (size > 36 && ctx.measureText(title).width > W - PAD * 2) {
+    size -= 2;
+    ctx.font = `800 ${size}px ${FONT}`;
+  }
+  const g = ctx.createLinearGradient(PAD, 0, PAD + ctx.measureText(title).width, 0);
+  g.addColorStop(0, "#f5b942");
+  g.addColorStop(0.55, "#ffe2a3");
+  g.addColorStop(1, "#c084fc");
+  ctx.fillStyle = g;
+  ctx.shadowColor = "rgba(245,185,66,0.35)";
+  ctx.shadowBlur = 24;
+  ctx.fillText(title, PAD, 958);
+  ctx.shadowBlur = 0;
+}
+
+function factValue(f: Fact): string {
+  if (f.kind === "firstStar") return t("trivia.year", { year: f.value });
+  if (f.kind === "topLanguage") return t("trivia.repos", { n: formatNumber(f.value) });
+  return t("trivia.stars", { n: formatNumber(f.value) });
+}
+
+function drawTrivia(ctx: CanvasRenderingContext2D, facts: Fact[]): void {
+  const x = 540;
+  const right = W - PAD;
+  ctx.fillStyle = C.body;
+  ctx.font = `700 20px ${FONT}`;
+  ctx.fillText(t("trivia.heading"), x, 1022);
+  facts.forEach((f, i) => {
+    const y = 1070 + i * 72;
+    ctx.fillStyle = C.muted;
+    ctx.font = `500 16px ${FONT}`;
+    ctx.fillText(t(`trivia.${f.kind}` as StringKey), x, y);
+    const value = factValue(f);
+    ctx.font = `700 22px ${FONT}`;
+    const valueWidth = ctx.measureText(value).width;
     ctx.textAlign = "right";
-    ctx.fillText(value === null ? "—" : String(value), W - PAD, y + 10);
+    ctx.fillStyle = C.gold;
+    ctx.fillText(value, right, y + 30);
     ctx.textAlign = "left";
+    ctx.fillStyle = C.text;
+    ctx.font = `600 22px ${FONT}`;
+    ctx.fillText(fit(ctx, f.label, right - x - valueWidth - 16), x, y + 30);
   });
 }
 
 function drawFooter(ctx: CanvasRenderingContext2D, shareUrl: string): void {
-  ctx.fillStyle = COLORS.muted;
-  ctx.font = `400 18px ${FONT}`;
-  ctx.fillText(t("png.footer"), PAD, H - 36);
+  ctx.strokeStyle = "rgba(255,255,255,0.08)";
+  ctx.beginPath();
+  ctx.moveTo(PAD, 1262);
+  ctx.lineTo(W - PAD, 1262);
+  ctx.stroke();
+  ctx.font = `400 17px ${FONT}`;
+  ctx.fillStyle = C.muted;
+  ctx.fillText(t("png.disclaimer"), PAD, 1300);
+  ctx.fillText(shareUrl.replace(/^https?:\/\//, ""), PAD, 1326);
+  // legend
   ctx.textAlign = "right";
-  ctx.fillText(shareUrl.replace(/^https?:\/\//, ""), W - PAD, H - 36);
+  let x = W - PAD;
+  for (const [label, color] of [
+    [t("png.legendStar"), C.star],
+    [t("png.legendOwn"), C.own],
+  ] as const) {
+    ctx.fillStyle = C.body;
+    ctx.fillText(label, x, 1313);
+    x -= ctx.measureText(label).width + 12;
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, 1307, 5, 0, Math.PI * 2);
+    ctx.fill();
+    x -= 28;
+  }
   ctx.textAlign = "left";
 }
 
@@ -115,9 +166,16 @@ export async function renderCardCanvas(a: Analysis, r: ScoreResult, shareUrl: st
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Canvas 2D is not available");
   await document.fonts?.ready;
-  drawBackground(ctx);
-  drawHeader(ctx, a, r, await loadAvatar(a.user.avatarUrl));
-  drawScores(ctx, r);
+  const avatar = await loadAvatar(a.user.avatarUrl);
+  const chart = layoutStarChart(a, SKY.cx, SKY.cy, SKY.r * 0.98);
+  drawBackdrop(ctx, W, H, chart, SKY);
+  drawPlanisphere(ctx, SKY);
+  drawChart(ctx, chart);
+  drawConstellationNames(ctx, chart);
+  drawHeader(ctx, a, avatar);
+  drawTitle(ctx, r);
+  drawRadar(ctx, 250, 1132, 86, r.scores, scoreLabel);
+  drawTrivia(ctx, pickFacts(a));
   drawFooter(ctx, shareUrl);
   return canvas;
 }

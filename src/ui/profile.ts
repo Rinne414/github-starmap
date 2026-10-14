@@ -4,12 +4,14 @@ import type { Analysis } from "../analysis";
 import { CATEGORY_BY_KEY, OTHER } from "../classify/taxonomy";
 import { categoryName, formatNumber, pick, subjectName, t } from "../i18n/i18n";
 import type { StringKey } from "../i18n/strings";
+import { type Fact, pickFacts } from "../score/facts";
 import { buildInsights, type SubjectCount } from "../score/insights";
 import { SCORE_KEYS, type ScoreKey, type ScoreResult, TOTAL_SUBJECTS } from "../score/score";
 import { el } from "./dom";
 
 export interface ProfileActions {
   onSubject: (subjectKey: string) => void;
+  onNode: (nodeId: string) => void;
   onDownload: () => void;
   onShare: (button: HTMLButtonElement) => void;
 }
@@ -20,7 +22,7 @@ export function titleText(result: ScoreResult): string {
   return t("title.join", { modifier: t(`title.${result.title.modifier}` as StringKey), noun });
 }
 
-export function scoreFact(key: ScoreKey, r: ScoreResult): string {
+function scoreFact(key: ScoreKey, r: ScoreResult): string {
   const f = r.facts;
   switch (key) {
     case "maker":
@@ -117,12 +119,38 @@ function insightList(titleKey: StringKey, rows: SubjectCount[], actions: Profile
   return box;
 }
 
+function triviaValue(f: Fact): string {
+  if (f.kind === "firstStar") return t("trivia.year", { year: f.value });
+  if (f.kind === "topLanguage") return t("trivia.repos", { n: formatNumber(f.value) });
+  return t("trivia.stars", { n: formatNumber(f.value) });
+}
+
+function trivia(a: Analysis, actions: ProfileActions): HTMLElement | null {
+  const facts = pickFacts(a);
+  if (!facts.length) return null;
+  const box = el("section", "section trivia");
+  box.append(el("h3", "", t("trivia.heading")));
+  for (const f of facts) {
+    const row = el(f.nodeId ? "button" : "div", "trivia-row");
+    if (row instanceof HTMLButtonElement) {
+      row.type = "button";
+      row.addEventListener("click", () => actions.onNode(f.nodeId!));
+    }
+    const text = el("div", "trivia-text");
+    text.append(el("div", "trivia-kind", t(`trivia.${f.kind}` as StringKey)), el("div", "trivia-label", f.label));
+    row.append(text, el("div", "trivia-value", triviaValue(f)));
+    box.append(row);
+  }
+  return box;
+}
+
 export function renderProfile(a: Analysis, r: ScoreResult, actions: ProfileActions): HTMLElement[] {
   const insights = buildInsights(a);
   return [
     scoreCard(a, r, actions),
+    trivia(a, actions),
     insightList("insight.topStarred", insights.topStarred, actions),
     insightList("insight.both", insights.both, actions),
     insightList("insight.onlyStarred", insights.onlyStarred, actions),
-  ];
+  ].filter((x): x is HTMLElement => x !== null);
 }

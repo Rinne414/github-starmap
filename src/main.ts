@@ -118,6 +118,7 @@ function renderPanel(): void {
     panelBody.replaceChildren(
       ...renderProfile(s.analysis, s.result, {
         onSubject: (key) => selectNode(subjectId(key)),
+        onNode: selectNode,
         onDownload: () => void exportPng(),
         onShare: (button) => void copyShareLink(button),
       }),
