@@ -1,0 +1,4919 @@
+[
+ {
+  "full_name": "170-carry/codex-tools",
+  "description": "代理,快捷切换codex 账号, 监控codex用量的工具,以及对codex进行api反代 , 支持多语言",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 1104,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "Codex",
+    "帳號切換",
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "1756141021/HainTag",
+  "description": "AI 绘画 TAG 生成器 · AI Drawing Tag Generator",
+  "topics": [
+   "ai",
+   "anime",
+   "comfyui",
+   "danbooru",
+   "novelai",
+   "pyqt6",
+   "stable-diffusion",
+   "tag-generator"
+  ],
+  "language": "Python",
+  "stargazers_count": 38,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "1756141021/tag-skill",
+  "description": "AI-image-prompt-TAG-skill",
+  "topics": [
+   "agent-skills",
+   "ai",
+   "ai-art",
+   "anime",
+   "danbooru",
+   "image-generation",
+   "novelai",
+   "prompt-engineering",
+   "prompt-generator",
+   "stable-diffusion",
+   "tag-generator"
+  ],
+  "language": null,
+  "stargazers_count": 14,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "Danbooru",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "Aaalice233/Aaalice_NAI_Launcher",
+  "description": "Aaalice的NAI启动器",
+  "topics": [],
+  "language": "Dart",
+  "stargazers_count": 188,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI"
+   ]
+  }
+ },
+ {
+  "full_name": "Abyss-Seeker/github-star-organizer",
+  "description": "Let AI organize your GitHub stars into categorized Lists — zero-assumption setup, user-review gates before any write. 让 AI 一键整理 GitHub 收藏夹",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 6,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "acgtools/hanime-hunter",
+  "description": "A CLI app to download HAnime.  用于下载里番的 CLI 工具",
+  "topics": [
+   "anime",
+   "cli",
+   "cli-app",
+   "downloader",
+   "go",
+   "golang",
+   "hanime",
+   "hentai",
+   "open-source",
+   "opensource"
+  ],
+  "language": "Go",
+  "stargazers_count": 377,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Acly/krita-ai-diffusion",
+  "description": "Streamlined interface for generating images with AI in Krita. Inpaint and outpaint with optional text prompt, no tweaking required.",
+  "topics": [
+   "generative-ai",
+   "krita-plugin",
+   "stable-diffusion"
+  ],
+  "language": "Python",
+  "stargazers_count": 10685,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "ADVICEsama/CivitaiFreeTool",
+  "description": "Civitai / HuggingFace 模型下载、管理、反向解析工具（免费全功能）",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 221,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Aeka0/DatasetsDeputy",
+  "description": "A training set management tool based on SQLite, designed for each individual image to correspond to multiple annotations for different types of models.",
+  "topics": [
+   "dataset-creation",
+   "dataset-management",
+   "datasets-preparation",
+   "image-annotation",
+   "image-captioning",
+   "sqlite",
+   "tagging",
+   "tagging-tool",
+   "wd14"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 4,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理"
+   ]
+  }
+ },
+ {
+  "full_name": "Aeka0/NAI-Utility-Tool",
+  "description": "A frontend tool for the NovelAI API, offering a clean, high-efficiency interface along with a suite of practical client-side features.",
+  "topics": [
+   "fluent-design",
+   "image-generation",
+   "inpainting",
+   "novelai",
+   "novelai-api",
+   "winui3"
+  ],
+  "language": "C#",
+  "stargazers_count": 72,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI"
+   ]
+  }
+ },
+ {
+  "full_name": "affaan-m/ECC",
+  "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+  "topics": [
+   "ai-agents",
+   "anthropic",
+   "claude",
+   "claude-code",
+   "developer-tools",
+   "llm",
+   "mcp",
+   "productivity"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 276209,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "agentscope-ai/QwenPaw",
+  "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+  "topics": [
+   "agent",
+   "agent-harness",
+   "agentscope",
+   "ai-agent",
+   "ai-agents",
+   "chatbot",
+   "harness-engineering",
+   "llm-tools",
+   "llms",
+   "loop-engineering",
+   "mcp",
+   "personal-ai-assistant",
+   "self-hosted",
+   "skills",
+   "super-agent",
+   "webui"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 35554,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "個人 AI 助理"
+   ]
+  }
+ },
+ {
+  "full_name": "ai4s-research/open-science",
+  "description": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative built on Tauri + MCP + agent skills.",
+  "topics": [
+   "ai-agent",
+   "ai-for-science",
+   "ai-scientist",
+   "ai4s",
+   "claude-science",
+   "claude-science-alternative",
+   "claude-science-desktop-alternative",
+   "desktop-app",
+   "linux",
+   "local-first",
+   "macos",
+   "mcp",
+   "open-science",
+   "open-science-desktop",
+   "reproducible-research",
+   "research-tools",
+   "research-workbench",
+   "scientific-research",
+   "tauri",
+   "windows"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 1781,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "AIMixer/LoRAMaster",
+  "description": "LoRAMaster - LoRA训练大师，一个专注于LoRA训练的开源工具",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 180,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "akasakariko/ContextX",
+  "description": "A free remote MCP server offering normal (Grok 4.3) and deep (Grok 4.20 Multi-Agent) search. No API keys required, streaming support prevents gateway timeouts. ",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 177,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "MCP"
+   ]
+  }
+ },
+ {
+  "full_name": "akatsuki-neo/JLT",
+  "description": "Equivalent Flows, Unequal Learning: Clean-Latent Prediction in Transformers",
+  "topics": [
+   "diffusion-model",
+   "dit",
+   "flow-matching",
+   "latent-space",
+   "text2image"
+  ],
+  "language": "Python",
+  "stargazers_count": 52,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "Aletheiar/ace-taffy-codex-pet",
+  "description": null,
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 30,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "An1X3R/Anima-Artist-Mixer",
+  "description": "Implement the anima plugin for artisti mix by hooking into the attention layer",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 134,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "AnctyEnly453/abstract-algebra-promo",
+  "description": "抽象代数：结构之美 | Canvas/WebGL animation and procedural soundtrack",
+  "topics": [],
+  "language": "HTML",
+  "stargazers_count": 263,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "程式碼渲染影片",
+    "3D 與動態網頁"
+   ]
+  }
+ },
+ {
+  "full_name": "anka-afk/astrbot_sowing_discord",
+  "description": "搬史自动化新时代!",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 598,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "AstrBot"
+   ]
+  }
+ },
+ {
+  "full_name": "AOrbitron/Eridanus",
+  "description": "基于 OneBot 协议的多功能bot兼开发框架。以llm function calling为核心构建了更智能的功能调用机制。支持不接入QQ纯Live2d桌宠模式",
+  "topics": [
+   "framework",
+   "function-calling",
+   "gemini-api",
+   "llm",
+   "onebot11",
+   "openai-api",
+   "qqbot",
+   "robot"
+  ],
+  "language": "Python",
+  "stargazers_count": 206,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ"
+   ]
+  }
+ },
+ {
+  "full_name": "Aratako/Irodori-TTS",
+  "description": "A Flow Matching-based Text-to-Speech Model with Emoji-driven Style Control",
+  "topics": [
+   "diffusion-models",
+   "flow-matching",
+   "python",
+   "speech-synthesis",
+   "text-to-speech",
+   "tts",
+   "voice-cloning"
+  ],
+  "language": "Python",
+  "stargazers_count": 1418,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": [
+    "TTS"
+   ]
+  }
+ },
+ {
+  "full_name": "AstrBotDevs/AstrBot",
+  "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+  "topics": [
+   "agent",
+   "ai",
+   "astrbot",
+   "chatbot",
+   "chatgpt",
+   "discord",
+   "docker",
+   "gemini",
+   "gpt",
+   "llama",
+   "llm",
+   "mcp",
+   "openai",
+   "python",
+   "qq",
+   "qqbot",
+   "telegram"
+  ],
+  "language": "Python",
+  "stargazers_count": 41655,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "AstrBot",
+    "QQ",
+    "Telegram"
+   ]
+  }
+ },
+ {
+  "full_name": "aweijll/LINUXDO_XIAOZHUSHOU",
+  "description": "公益小助手 Android APP 官方下载与使用说明",
+  "topics": [
+   "ai-gateway",
+   "android",
+   "apk",
+   "linuxdo",
+   "newapi"
+  ],
+  "language": null,
+  "stargazers_count": 100,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "Baiyuetribe/paper2gui",
+  "description": "Convert AI papers to GUI，Make it easy and convenient for everyone to use artificial intelligence technology。让每个人都简单方便的使用前沿人工智能技术",
+  "topics": [
+   "animegan2",
+   "codeformer-gui",
+   "dain",
+   "dain-gui",
+   "gfpgan",
+   "huoshan-tts",
+   "microsoft-tts",
+   "ncnn",
+   "ncnn-model",
+   "noveria",
+   "realcugan-gui",
+   "realcugan-pro",
+   "realesrganv2-gu",
+   "rife-gui",
+   "stable-diffusion",
+   "waifu2x-gui"
+  ],
+  "language": "Jupyter Notebook",
+  "stargazers_count": 10702,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "BigPizzaV3/CodexPlusPlus",
+  "description": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 31968,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "BizaNator/BrainDeadBackgroundRemover",
+  "description": "Simple drag and drop AI based background remover 100% local models, no internet needed after models download",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 21,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "去背"
+   ]
+  }
+ },
+ {
+  "full_name": "bkingfilm/lapian-notes",
+  "description": "AI 辅助的电影拉片工具：AI 拆出剧情泳道时间轴、结构树、情绪曲线，边播边写拉片笔记，免费开源全本地 | AI-assisted film breakdown notebook: story-lane timeline, structure tree, emotion curve. Free, open source, fully local.",
+  "topics": [
+   "ai",
+   "film-analysis",
+   "filmmaking",
+   "react",
+   "screenwriting",
+   "vite"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 719,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "影片剪輯"
+   ]
+  }
+ },
+ {
+  "full_name": "BlackSnowSkill/ANIMA_BOOSTER",
+  "description": "High-performance optimization suite for Anima DiT 2B model in ComfyUI",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 83,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "BlackSnowSkill/ComfyUI-BSS_FLSampler",
+  "description": "An advanced Foveated Latent Sampler (FLS) for ComfyUI. Selective high-frequency local contrast boosting and stochastic texture noise injection based on latent dynamics. Features a gorgeous premium dark matte gold UI by BSS.",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 97,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "bmaltais/kohya_ss",
+  "description": null,
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 12616,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "caca2331/finesub",
+  "description": "Pipeline that turns audio/video into Chinese subtitles: vocal separation → VAD/ASR → optional LLM correction, translation, and knowledge-assisted polish.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 83,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": [
+    "字幕"
+   ]
+  }
+ },
+ {
+  "full_name": "calesthio/OpenMontage",
+  "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+  "topics": [
+   "agent",
+   "agentic-ai",
+   "ai",
+   "claude",
+   "copilot",
+   "cursor",
+   "elevenlabs",
+   "ffmpeg",
+   "flux",
+   "image-generation",
+   "open-source",
+   "openai",
+   "python",
+   "remotion",
+   "stable-diffusion",
+   "text-to-speech",
+   "text-to-video",
+   "video-generation",
+   "video-production"
+  ],
+  "language": "Python",
+  "stargazers_count": 65984,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 影片生成",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "chatboxai/chatbox",
+  "description": "Powerful AI Client",
+  "topics": [
+   "assistant",
+   "chatbot",
+   "chatgpt",
+   "claude",
+   "claude-code",
+   "copilot",
+   "deepseek",
+   "gemini",
+   "gpt",
+   "gpt-5",
+   "ollama",
+   "openai"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 41987,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "chatfire-AI/huobao-drama",
+  "description": "🎬 火宝短剧 - 基于AI的一站式短剧生成平台 《一句话生成完整短剧，从剧本到成片全自动化》  Huobao Drama - An AI-Powered End-to-End Short Drama Generator \"One Sentence to Complete Drama: Fully Automated from Script to Final Video\"",
+  "topics": [],
+  "language": "Vue",
+  "stargazers_count": 15973,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 短劇"
+   ]
+  }
+ },
+ {
+  "full_name": "ChatLab/ChatLab",
+  "description": "Local-first chat history analyzer with AI. | 本地优先的 AI 聊天记录分析工具",
+  "topics": [
+   "ai-agent",
+   "chat-analyzer",
+   "chat-history",
+   "data-analysis",
+   "data-visualization",
+   "harness"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 7505,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "聊天記錄分析"
+   ]
+  }
+ },
+ {
+  "full_name": "chen-006/meow-ai-arena",
+  "description": "AI 算法对抗大赛",
+  "topics": [],
+  "language": "HTML",
+  "stargazers_count": 91,
+  "gold": {
+   "category": "其他",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "chrichuang218/ai-learning-coach",
+  "description": "AI private learning coach for Codex: learn through real projects, adaptive dialogue, debugging, evidence-based mastery, and visible progress.",
+  "topics": [
+   "active-learning",
+   "agent-skills",
+   "ai-learning",
+   "chinese",
+   "codex",
+   "codex-skills",
+   "deliberate-practice",
+   "developer-tools",
+   "learning-coach",
+   "project-based-learning"
+  ],
+  "language": "Python",
+  "stargazers_count": 223,
+  "gold": {
+   "category": "教育與學習",
+   "subjects": [
+    "AI 家教",
+    "Codex",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "clash-verge-rev/clash-verge-rev",
+  "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+  "topics": [
+   "clash",
+   "clash-meta",
+   "clash-verge",
+   "linux",
+   "mac",
+   "mihomo",
+   "tauri-app",
+   "windows"
+  ],
+  "language": "Rust",
+  "stargazers_count": 150297,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "網路代理"
+   ]
+  }
+ },
+ {
+  "full_name": "contains-studio/agents",
+  "description": "sharing current agents in use",
+  "topics": [],
+  "language": null,
+  "stargazers_count": 12419,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "多代理協作",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "CookSleep/gpt_image_playground",
+  "description": "基于 OpenAI gpt-image-2.5 API 的图片生成与编辑工具",
+  "topics": [
+   "gpt-image",
+   "image-editing",
+   "image-generation",
+   "openai",
+   "react",
+   "tailwindcss",
+   "typescript",
+   "vite"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 3869,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "GPT Image"
+   ]
+  }
+ },
+ {
+  "full_name": "craft-ai-agents/craft-agents-oss",
+  "description": null,
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 7236,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "CutrelyAlex/QQChatAnalyzer",
+  "description": "QQ聊天记录总结器",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 78,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ",
+    "聊天記錄分析"
+   ]
+  }
+ },
+ {
+  "full_name": "D4Vinci/Scrapling",
+  "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+  "topics": [
+   "ai",
+   "ai-scraping",
+   "automation",
+   "crawler",
+   "crawling",
+   "crawling-python",
+   "data",
+   "data-extraction",
+   "mcp",
+   "mcp-server",
+   "playwright",
+   "python",
+   "scraping",
+   "selectors",
+   "stealth",
+   "web-scraper",
+   "web-scraping",
+   "web-scraping-python",
+   "webscraping",
+   "xpath"
+  ],
+  "language": "Python",
+  "stargazers_count": 86610,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "爬蟲"
+   ]
+  }
+ },
+ {
+  "full_name": "Dailin521/codex-provider-sync",
+  "description": "Synchronize Codex session provider metadata across rollout files and SQLite state.",
+  "topics": [
+   "avalonia",
+   "codex-cli",
+   "codex-desktop",
+   "dotnet",
+   "macos",
+   "model-provider",
+   "nodejs",
+   "openai-codex",
+   "provider-switcher",
+   "session-management",
+   "sqlite",
+   "windows",
+   "winforms"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 3575,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "DanteAlighieri13210914/pv-tool",
+  "description": "Automaticly generate kinetic typography",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 441,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "程式碼渲染影片"
+   ]
+  }
+ },
+ {
+  "full_name": "datalab-to/chandra",
+  "description": "OCR model that handles complex tables, forms, handwriting with full layout.",
+  "topics": [
+   "ai",
+   "ocr"
+  ],
+  "language": "Python",
+  "stargazers_count": 12485,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "OCR"
+   ]
+  }
+ },
+ {
+  "full_name": "DavidHDev/react-bits",
+  "description": "The biggest open source library of animated, interactive & fully customizable React and NextJS components for building memorable websites.",
+  "topics": [
+   "3d",
+   "animations",
+   "component-library",
+   "components",
+   "components-library",
+   "components-react",
+   "css-animations",
+   "javascript",
+   "react",
+   "react-components",
+   "reactjs",
+   "tailwind",
+   "tailwindcss",
+   "ui-components",
+   "ui-library",
+   "web"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 48819,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "UI 元件庫",
+    "3D 與動態網頁"
+   ]
+  }
+ },
+ {
+  "full_name": "deepseek-ai/deepseek-harness",
+  "description": "DeepSeek Harness: Everything is a Plugin.",
+  "topics": [
+   "ai-agents",
+   "cordis",
+   "dsh",
+   "dsh-plugin"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 246743,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "DeusData/codebase-memory-mcp",
+  "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+  "topics": [
+   "aider",
+   "ast",
+   "claude-code",
+   "code-analysis",
+   "code-intelligence",
+   "codex",
+   "cursor",
+   "cypher",
+   "developer-tools",
+   "gemini-cli",
+   "graph-visualization",
+   "kilocode",
+   "knowledge-graph",
+   "mcp",
+   "mcp-server",
+   "model-context-protocol",
+   "opencode",
+   "sqlite",
+   "tree-sitter",
+   "windsurf"
+  ],
+  "language": "C",
+  "stargazers_count": 46276,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "MCP"
+   ]
+  }
+ },
+ {
+  "full_name": "disler/claude-code-hooks-mastery",
+  "description": "Master Claude Code Hooks",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 3934,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "dolag233/Serpent",
+  "description": "Cross-platform digital asset management software for game artists, VFX professionals, and graphic and motion designers.",
+  "topics": [
+   "asset-management",
+   "creative-tools",
+   "creative-tools-for-digital-artists",
+   "design-tools"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 582,
+  "gold": {
+   "category": "圖片管理與瀏覽",
+   "subjects": [
+    "圖片管理"
+   ]
+  }
+ },
+ {
+  "full_name": "dseditor/comfy-workflow-landing",
+  "description": "Procedure for landing someone else's ComfyUI workflow on your own machine. A guide for AI agents — no scripts.",
+  "topics": [],
+  "language": null,
+  "stargazers_count": 20,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "egeorcun/lucida",
+  "description": "Background removal that keeps what matters: glass, camouflage, text, glow and line art. BiRefNet fine-tune, MIT.",
+  "topics": [
+   "background-removal",
+   "birefnet",
+   "camouflage",
+   "computer-vision",
+   "deep-learning",
+   "huggingface",
+   "image-matting",
+   "image-segmentation",
+   "pytorch",
+   "transparency"
+  ],
+  "language": "Python",
+  "stargazers_count": 174,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "去背"
+   ]
+  }
+ },
+ {
+  "full_name": "eternity4719/HowToLiveBetter",
+  "description": "高性价比人生指南: 长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+  "topics": [],
+  "language": "HTML",
+  "stargazers_count": 58230,
+  "gold": {
+   "category": "其他",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "eternityspring/shuohao-skills",
+  "description": "AI 短剧制作的 skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜 | Agent skills for AI short-drama production — character bibles, adaptation outlines, art bibles, screenplays, storyboards. Runs in Claude Code & codex.",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 4339,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 短劇",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "evazion/translate-pixiv-tags",
+  "description": null,
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 49,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Pixiv",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "facebookresearch/sam3",
+  "description": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 11910,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "物件偵測與分割"
+   ]
+  }
+ },
+ {
+  "full_name": "farion1231/cc-switch",
+  "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+  "topics": [
+   "ai-tools",
+   "claude-code",
+   "codex",
+   "desktop-app",
+   "grok",
+   "grokbuild",
+   "hermes",
+   "hermes-agent",
+   "mcp",
+   "open-source",
+   "openclaw",
+   "openclaw-ui",
+   "opencode",
+   "pi",
+   "provider-management",
+   "rust",
+   "skills",
+   "skills-management",
+   "tauri",
+   "wsl-support"
+  ],
+  "language": "Rust",
+  "stargazers_count": 142282,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "帳號切換",
+    "Claude Code",
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "fathyb/carbonyl",
+  "description": "Chromium running inside your terminal",
+  "topics": [
+   "browser",
+   "chromium",
+   "terminal"
+  ],
+  "language": "Rust",
+  "stargazers_count": 19508,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "終端機"
+   ]
+  }
+ },
+ {
+  "full_name": "feitangyuan/motion-web",
+  "description": "Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification.",
+  "topics": [],
+  "language": "HTML",
+  "stargazers_count": 699,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "3D 與動態網頁",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "files-community/Files",
+  "description": "A modern file manager that helps users organize their files and folders.",
+  "topics": [
+   "alternatives",
+   "csharp",
+   "customization",
+   "developer-tools",
+   "dotnet",
+   "file-manager",
+   "files",
+   "fluent",
+   "fluent-design",
+   "git",
+   "good-first-issue",
+   "power-user",
+   "productivity",
+   "utilities",
+   "winappsdk",
+   "windows",
+   "windows-10",
+   "windows-11",
+   "winui",
+   "xaml"
+  ],
+  "language": "C#",
+  "stargazers_count": 45878,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "fishaudio/fish-speech",
+  "description": "SOTA Open Source TTS",
+  "topics": [
+   "llama",
+   "transformer",
+   "tts",
+   "valle",
+   "vits",
+   "vqgan",
+   "vqvae"
+  ],
+  "language": "Python",
+  "stargazers_count": 32986,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": [
+    "TTS"
+   ]
+  }
+ },
+ {
+  "full_name": "GALIAIS/LoraHub",
+  "description": null,
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 24,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "ggml-org/llama.cpp",
+  "description": "LLM inference in C/C++",
+  "topics": [
+   "ggml"
+  ],
+  "language": "C++",
+  "stargazers_count": 130710,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "本地推理"
+   ]
+  }
+ },
+ {
+  "full_name": "godotengine/godot",
+  "description": "Godot Engine – Multi-platform 2D and 3D game engine",
+  "topics": [
+   "game-development",
+   "game-engine",
+   "gamedev",
+   "godot",
+   "godotengine",
+   "multi-platform",
+   "open-source"
+  ],
+  "language": "C++",
+  "stargazers_count": 118210,
+  "gold": {
+   "category": "其他",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "GreyGunG/Kiro-RS-Tool",
+  "description": "Kiro-RS-Tool：面向 Claude Code 工具调用兼容的 Kiro / Anthropic API 代理，强化工具 schema 映射、流式 JSON、thinking/effort、profileArn 与 Admin 管理。",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 119,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "h4ckf0r0day/obscura",
+  "description": "The headless browser for AI agents and web scraping",
+  "topics": [
+   "antidetect",
+   "antidetect-browser",
+   "browser",
+   "browser-automation",
+   "cdp",
+   "headless",
+   "playwright",
+   "puppeteer",
+   "rust"
+  ],
+  "language": "Rust",
+  "stargazers_count": 28742,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "瀏覽器自動化",
+    "爬蟲"
+   ]
+  }
+ },
+ {
+  "full_name": "Hajimides/SD-Anima-Prompt-Studio",
+  "description": "✨ Stunning glassmorphism UI for Stable Diffusion and Anima prompt engineering. Intelligent conflict-free composition, live preview, NSFW safety mode, WebGL animations, and bilingual interface. Pure client-side, zero installation required.",
+  "topics": [
+   "ai-art",
+   "anime-prompt",
+   "client-side",
+   "glassmorphism",
+   "nsfw",
+   "prompt-engineering",
+   "prompt-studio",
+   "stable-diffusion",
+   "webgl"
+  ],
+  "language": "HTML",
+  "stargazers_count": 109,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "Anima"
+   ]
+  }
+ },
+ {
+  "full_name": "HakureiMonika/QQ-Chat-AI-Analyzer",
+  "description": "这是依赖于Github上的开源项目qq-chat-exporter-master搭建的QQ群聊消息总结分析工具，出于学习科研目的而开发。可用于生成年度报告等分析报告。",
+  "topics": [
+   "ai",
+   "annual-report",
+   "chat-history",
+   "llm",
+   "local-deployment",
+   "qq",
+   "qq-chat-ai-analyzer",
+   "qq-chat-exporter"
+  ],
+  "language": "Python",
+  "stargazers_count": 45,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ",
+    "聊天記錄分析"
+   ]
+  }
+ },
+ {
+  "full_name": "HBAI-Ltd/Toonflow-app",
+  "description": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infinite canvas, AI agents, storyboarding, image and video generation. Self-hosted and extensible, with a canvas-based approach similar to LibTV and TapNow.",
+  "topics": [
+   "ai-agents",
+   "ai-comic",
+   "ai-content-creation",
+   "ai-filmmaking",
+   "ai-short-drama",
+   "generative-ai",
+   "image-generation",
+   "image-to-video",
+   "infinite-canvas",
+   "libtv",
+   "motion-comics",
+   "node-based-editor",
+   "open-source",
+   "short-drama",
+   "storyboarding",
+   "tapnow",
+   "text-to-image",
+   "text-to-video",
+   "video-generation",
+   "workflow-automation"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 17086,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 短劇",
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "hero8152/Infinite-Canvas",
+  "description": "Supports comfyui/API calls/modelscope calls",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 3122,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "hgmzhn/manga-translator-ui",
+  "description": "基于manga-image-translator 实现的开源漫画AI翻译桌面工具。支持日、韩、英文漫画自动处理，集成OpenAl、Gemini等多翻译引擎；实现OCR文字检测、原文擦除、AI翻译、图像修复、译文排版完整链路，自带可视化编辑器，支持自定义文本样式，一键部署开箱即用。",
+  "topics": [
+   "automated-translation",
+   "comic-translation",
+   "gemini",
+   "image-translator",
+   "machine-translation",
+   "manga-translato",
+   "ocr",
+   "openai",
+   "python",
+   "scanlation"
+  ],
+  "language": "Python",
+  "stargazers_count": 2972,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "漫畫翻譯",
+    "OCR"
+   ]
+  }
+ },
+ {
+  "full_name": "hiyouga/EasyR1",
+  "description": "EasyR1: An Efficient, Scalable, Multi-Modality RL Training Framework based on veRL",
+  "topics": [
+   "ai",
+   "deepseek",
+   "gpt",
+   "llm",
+   "nlp",
+   "qwen",
+   "reinforcement-learning",
+   "rl"
+  ],
+  "language": "Python",
+  "stargazers_count": 5183,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "LLM 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "HK416-TYPED/LAX-Prompt-Lens",
+  "description": "Chrome extension for extracting Danbooru tags and generating professional illustration art-direction prompts.",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 18,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "HKUDS/CLI-Anything",
+  "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 51827,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "HKUDS/DeepTutor",
+  "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+  "topics": [
+   "ai-agents",
+   "ai-tutor",
+   "clawbot",
+   "cli-tool",
+   "deepresearch",
+   "interactive-learning",
+   "learning",
+   "multi-agent-systems",
+   "rag"
+  ],
+  "language": "Python",
+  "stargazers_count": 41075,
+  "gold": {
+   "category": "教育與學習",
+   "subjects": [
+    "AI 家教"
+   ]
+  }
+ },
+ {
+  "full_name": "hugohe3/ppt-master",
+  "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+  "topics": [
+   "ai-agent",
+   "aippt",
+   "office",
+   "powerpoint",
+   "powerpoint-generation",
+   "ppt",
+   "pptx",
+   "presentation",
+   "slide",
+   "slides"
+  ],
+  "language": "Python",
+  "stargazers_count": 58965,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "文件與簡報生成"
+   ]
+  }
+ },
+ {
+  "full_name": "huiyadanli/RevokeMsgPatcher",
+  "description": ":trollface: A hex editor for WeChat/QQ/TIM - PC版微信/QQ/TIM防撤回补丁（我已经看到了，撤回也没用了）",
+  "topics": [
+   "hex-editor",
+   "patch",
+   "pc",
+   "qq",
+   "revoke",
+   "revokemsg",
+   "tim",
+   "tool",
+   "wechat",
+   "windows"
+  ],
+  "language": "C#",
+  "stargazers_count": 38911,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ",
+    "微信"
+   ]
+  }
+ },
+ {
+  "full_name": "hypit-ai/hypit",
+  "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+  "topics": [
+   "agentic-ai",
+   "ai",
+   "ai-agents",
+   "ai-video",
+   "compiler",
+   "dsl",
+   "ffmpeg",
+   "generative-ai",
+   "llm",
+   "markup-language",
+   "monorepo",
+   "plugin-system",
+   "programming-language",
+   "text-to-video",
+   "typescript",
+   "video",
+   "video-automation",
+   "video-clone",
+   "video-editing",
+   "video-generation"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 20722,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 影片生成",
+    "多代理協作"
+   ]
+  }
+ },
+ {
+  "full_name": "iOfficeAI/AionUi",
+  "description": "Open-source 24/7 Cowork app for OpenClaw, Hermes, Claude Code, Codex, OpenCode and 20+ more CLI Agent | Customize your assistants | Team them up｜Star if you like it!",
+  "topics": [
+   "acp",
+   "agent-team",
+   "ai",
+   "ai-agent",
+   "chat",
+   "chatbot",
+   "claude-code",
+   "clawdbot",
+   "codex",
+   "cowork",
+   "gemini",
+   "gemini-cli",
+   "hermes",
+   "llm",
+   "nano-banana",
+   "office",
+   "openclaw",
+   "opencode",
+   "skills",
+   "webui"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 33413,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "多代理協作",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "iperov/DeepFaceLive",
+  "description": "Real-time face swap for PC streaming or video calls",
+  "topics": [
+   "deepfake",
+   "faceswap",
+   "machine-learning",
+   "real-time",
+   "streaming",
+   "videocall",
+   "webcam"
+  ],
+  "language": "Python",
+  "stargazers_count": 31015,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "換臉"
+   ]
+  }
+ },
+ {
+  "full_name": "IwaraEnhance/IwaraDownloadTool",
+  "description": "Iwara 下载工具 | Iwara Downloader",
+  "topics": [
+   "aria2",
+   "downloader",
+   "iwara",
+   "tampermonkey",
+   "userscript"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 428,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "jackwener/OpenCLI",
+  "description": "Make Any Website into CLI & Use your logged-in browser by AI agent. ",
+  "topics": [
+   "ai-agent",
+   "ai-agents",
+   "ai-tools",
+   "browser-automation",
+   "browser-use",
+   "cli",
+   "playwright"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 30008,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "瀏覽器自動化"
+   ]
+  }
+ },
+ {
+  "full_name": "Jamailar/Beav",
+  "description": "小红书 AI 运营工作台｜小红书采集、评论区下载、素材库、选题、AI写作、小红书全域解决方案，开箱即用，一键安装，小红书AI工作台，自媒体素材库，AI写作+图片自动编排，小红书版OpenClaw、自媒体资产底座+AI工作台，支持小红书图文+小红书评论区下载、小红书AI创作工具、自媒体版WorkBuddy、抖音、小红书爬虫数据采集",
+  "topics": [
+   "ai-agents",
+   "browser-extension",
+   "content-creation",
+   "desktop-app",
+   "knowledge-base",
+   "local-first",
+   "rust",
+   "skills",
+   "tauri",
+   "typescript",
+   "xiaohongshu",
+   "xiaohongshu-downloader"
+  ],
+  "language": "Rust",
+  "stargazers_count": 1847,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "爬蟲"
+   ]
+  }
+ },
+ {
+  "full_name": "jessepwj/CCteam-creator",
+  "description": "Multi-agent team orchestration skill for Claude Code. Set up parallel AI agent teams with file-based planning and role-based collaboration.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 307,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "多代理協作"
+   ]
+  }
+ },
+ {
+  "full_name": "jingyaogong/minimind",
+  "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+  "topics": [
+   "artificial-intelligence",
+   "large-language-model"
+  ],
+  "language": "Python",
+  "stargazers_count": 63501,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "LLM 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "jlcodes99/cockpit-tools",
+  "description": " 🚀 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy，多账号切换、配额监控、自动唤醒与多开实例管理。 🚀 Universal AI IDE account manager for Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy, with multi-account switching, quota monitoring, wake-up automation, and multi-insta",
+  "topics": [
+   "account-manager",
+   "ai",
+   "antigravity",
+   "codebuddy",
+   "codex",
+   "cursor",
+   "github-copilot",
+   "kiro",
+   "windsurf"
+  ],
+  "language": "Rust",
+  "stargazers_count": 18787,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "帳號切換"
+   ]
+  }
+ },
+ {
+  "full_name": "JyiDeng/QQ-Summary-Genius",
+  "description": "调用大模型 API ，对指定日期的 QQ 聊天记录提取关键信息，含聊天记录预处理，再也不用爬楼，帮你蹲守重要群消息！",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 47,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ",
+    "聊天記錄分析"
+   ]
+  }
+ },
+ {
+  "full_name": "ka-pi-ba-la/AIbijia",
+  "description": "分享便宜靠谱Token，抹平信息差",
+  "topics": [],
+  "language": null,
+  "stargazers_count": 1705,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "KaringX/clashmi",
+  "description": "Clash Mihomo for iOS/MacOS/Android/Windows/Linux",
+  "topics": [
+   "clash",
+   "clashmi",
+   "mihomo"
+  ],
+  "language": "Dart",
+  "stargazers_count": 9769,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "網路代理"
+   ]
+  }
+ },
+ {
+  "full_name": "kawa0x0A/AiImageMetadataReader",
+  "description": null,
+  "topics": [],
+  "language": "C#",
+  "stargazers_count": 2,
+  "gold": {
+   "category": "圖片管理與瀏覽",
+   "subjects": [
+    "圖片中繼資料"
+   ]
+  }
+ },
+ {
+  "full_name": "KeithZ117/Comfyui-anima-sampler",
+  "description": "A better ComfyUI sampler for Anima — Cosmos-style RF sampling (FlowUniPC + PC3, RF linear shift) for stronger prompt adherence, structure, and detail retention.",
+  "topics": [
+   "anima",
+   "comfyui",
+   "comfyui-nodes",
+   "sampler"
+  ],
+  "language": "Python",
+  "stargazers_count": 59,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "Kohaku-Lab/KohakuTerrarium",
+  "description": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.",
+  "topics": [
+   "agent",
+   "agentic-framework",
+   "llm"
+  ],
+  "language": "Python",
+  "stargazers_count": 519,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "KohakuBlueleaf/LyCORIS",
+  "description": "Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion.",
+  "topics": [
+   "finetune",
+   "stable-diffusion"
+  ],
+  "language": "Python",
+  "stargazers_count": 2527,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "KohakuBlueleaf/z-tipo-extension",
+  "description": "A sd-webui extension for utilizing DanTagGen to \"upsample prompts\".",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 642,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Stable Diffusion WebUI",
+    "提示詞與標籤"
+   ]
+  }
+ },
+ {
+  "full_name": "koharu-rs/koharu",
+  "description": "ML-powered manga translator, written in Rust.",
+  "topics": [
+   "computer-vision",
+   "deep-learning",
+   "gpu",
+   "gui",
+   "japanese",
+   "manga",
+   "rust",
+   "text-rendering",
+   "translation",
+   "webgpu"
+  ],
+  "language": "Rust",
+  "stargazers_count": 5942,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "漫畫翻譯"
+   ]
+  }
+ },
+ {
+  "full_name": "kwaroran/Risuai",
+  "description": "Make your own story. User-friendly software for LLM roleplaying",
+  "topics": [
+   "ai",
+   "characters",
+   "chat",
+   "chatbot",
+   "claude",
+   "gemini",
+   "gpt",
+   "llama",
+   "llm",
+   "mcp",
+   "mcp-client",
+   "mistral",
+   "roleplay",
+   "tauri"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 1717,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "角色扮演"
+   ]
+  }
+ },
+ {
+  "full_name": "LAIJiangFeng/tauri-dustdesk",
+  "description": "桌面整理收纳、一键启动、召唤剪切板、搜索、统计等",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 97,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "桌面生產力",
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "LAION-AI/aesthetic-predictor",
+  "description": "A linear estimator on top of clip to predict the aesthetic quality of pictures",
+  "topics": [],
+  "language": "Jupyter Notebook",
+  "stargazers_count": 738,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "LBEILC/RhineLabUI",
+  "description": "Rhine Lab archive interface built with TypeScript and Three.js",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 782,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "3D 與動態網頁"
+   ]
+  }
+ },
+ {
+  "full_name": "lbjlaq/Antigravity-Manager",
+  "description": "Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigravity Tools. Built with Tauri v2 + React (Rust).专业的 Antigravity 账号管理与切换工具。为 Antigravity 提供一键无缝账号切换功能。",
+  "topics": [
+   "account-manager",
+   "antigravity"
+  ],
+  "language": "Rust",
+  "stargazers_count": 32051,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "帳號切換"
+   ]
+  }
+ },
+ {
+  "full_name": "lemomo-ai/lemo-opuscar",
+  "description": "Claude Code skill for short films with no video model: 43 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98). By Lemomo. · Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南",
+  "topics": [
+   "agent-skills",
+   "ai-agents",
+   "ai-short-film",
+   "ai-video",
+   "animation",
+   "canvas",
+   "claude",
+   "claude-code",
+   "claude-code-plugin",
+   "claude-code-skill",
+   "creative-coding",
+   "ffmpeg",
+   "filmmaking",
+   "motion-graphics",
+   "opus-5-5",
+   "prompt-library",
+   "text-to-speech",
+   "threejs",
+   "video-production",
+   "webgl"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 1727,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "Claude Code",
+    "Agent Skills",
+    "程式碼渲染影片"
+   ]
+  }
+ },
+ {
+  "full_name": "leoding86/webextension-pixiv-toolkit",
+  "description": "A web extension for Pixiv",
+  "topics": [
+   "chrome",
+   "firefox",
+   "javascript",
+   "pixiv",
+   "vuejs",
+   "vuetifyjs",
+   "webextension"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 1784,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "Pixiv",
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Leonxlnx/taste-skill",
+  "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
+  "topics": [
+   "agent",
+   "ai",
+   "claude",
+   "claude-code",
+   "codex",
+   "coding",
+   "design",
+   "frontend",
+   "lowcode",
+   "nocode",
+   "skill",
+   "skills",
+   "vibecoding"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 94268,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills",
+    "設計系統"
+   ]
+  }
+ },
+ {
+  "full_name": "lfnovo/open-notebook",
+  "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+  "topics": [
+   "assistant",
+   "learning",
+   "note-taking",
+   "notebook",
+   "notes-app",
+   "self-learning"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 40017,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "RAG"
+   ]
+  }
+ },
+ {
+  "full_name": "liangdabiao/video-skills-toolkit",
+  "description": "Remotion 短视频生产流程,特别是 微信公众号文章转视频,语文vox风格纸片视频生成，数学教学视频生成 Remotion 视频。视频其实是一条以声音为轴的时间线。字幕文件是整条视频的唯一基准，画面、动画、音效全部要对齐到它。 ",
+  "topics": [
+   "skill"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 204,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "程式碼渲染影片",
+    "教學影片",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "lihaoyun6/ComfyUI-H3VAE_TRT",
+  "description": "Running ONNX/TRT version of the MiniMax-H3 VAE in ComfyUI, which increase speed by up to 1.7x",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 252,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "MiniMax H3",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "lintsinghua/claude-code-book",
+  "description": "《御舆：解码 Agent Harness》42万字拆解 AI Agent 的Harness骨架与神经 —— Claude Code 架构深度剖析，15 章从对话循环到构建你自己的 Agent Harness。在线阅读网站：",
+  "topics": [
+   "agent",
+   "agent-architecture",
+   "ai-agent",
+   "anthropic",
+   "book",
+   "chinese",
+   "claude-code",
+   "llm",
+   "mcp"
+  ],
+  "language": "Python",
+  "stargazers_count": 4294,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "lioensky/VCPToolBox",
+  "description": "VCP 部署在 AI 模型 API 与前端应用之间，是面向AGI OS开发和探索的工业级基建示范项目。通过统一指令协议、多层级持久化记忆、分布式插件引擎及多 Agent 协作框架，将原本“无状态、无记忆、无工具调用能力”的大语言模型，彻底改造成拥有永久自我意识、物理世界操作权及群体协作智能的完整智能体系统。",
+  "topics": [
+   "agent-framework",
+   "ai-agent",
+   "ai-assistant",
+   "ai-companion",
+   "context-management",
+   "context-management-system",
+   "function-calling",
+   "llm",
+   "multi-model",
+   "nodejs",
+   "openai-compatible",
+   "plugin-system",
+   "prompt-engineering",
+   "rag",
+   "rust",
+   "vector-database",
+   "vue"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 2364,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "liqiang-xxfy/fly-cursor-free",
+  "description": "轻松一键续杯 Cursor Pro，保持14天试用不掉。【支持 Claude 4】",
+  "topics": [
+   "cursor",
+   "cursor-pro",
+   "free",
+   "trial"
+  ],
+  "language": "Vue",
+  "stargazers_count": 1916,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "帳號切換"
+   ]
+  }
+ },
+ {
+  "full_name": "LLOneBot/LuckyLilliaBot",
+  "description": "支持 OneBot 11、Satori 和 Milky 协议",
+  "topics": [
+   "llbot",
+   "llob",
+   "llonebot",
+   "milky",
+   "onebot",
+   "onebot11",
+   "qq",
+   "qqbot",
+   "satori"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 3652,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ"
+   ]
+  }
+ },
+ {
+  "full_name": "lnkiai/m3e-canvas",
+  "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+  "topics": [
+   "design-tool",
+   "material-3-expressive",
+   "material-design",
+   "material3",
+   "nextjs",
+   "prompt",
+   "react",
+   "vibe-coding"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 9080,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "設計系統"
+   ]
+  }
+ },
+ {
+  "full_name": "lolishinshi/imsearch",
+  "description": "基于特征点匹配的大规模相似图片搜索",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 1098,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "圖片管理"
+   ]
+  }
+ },
+ {
+  "full_name": "Loongphy/codex-auth",
+  "description": "A CLI tool to switch and manage Codex accounts",
+  "topics": [
+   "codex",
+   "zig"
+  ],
+  "language": "Zig",
+  "stargazers_count": 2795,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "Codex",
+    "帳號切換"
+   ]
+  }
+ },
+ {
+  "full_name": "lsdefine/GenericAgent",
+  "description": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+  "topics": [
+   "ai-agent",
+   "automation",
+   "autonomous-agent",
+   "browser-automation",
+   "claude",
+   "computer-control",
+   "desktop-automation",
+   "gemini",
+   "lightweight",
+   "llm-agent",
+   "memory-system",
+   "python",
+   "self-evolving",
+   "skill-tree",
+   "task-automation"
+  ],
+  "language": "Python",
+  "stargazers_count": 14299,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "ltaoo/wx_channels_download",
+  "description": "微信视频号下载器",
+  "topics": [],
+  "language": "Go",
+  "stargazers_count": 9729,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器",
+    "微信"
+   ]
+  }
+ },
+ {
+  "full_name": "Lucent-Snow/style-extractor",
+  "description": "一个能够提取最大化提取网页风格的skill",
+  "topics": [],
+  "language": "CSS",
+  "stargazers_count": 453,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "設計系統",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "luolangaga/tubatools",
+  "description": "这是图吧工具箱基于 WinUI 3 全新重构的版本，一款由社区驱动、深度契合 Windows 11 设计美学的现代化工具箱。它不仅确保你始终使用最新版本的工具，还集成了更加丰富的实用功能，更可满足高度自定义的个性化需求。",
+  "topics": [],
+  "language": "C#",
+  "stargazers_count": 5292,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "lyhsiang/AWS-Kiro-Workshops",
+  "description": null,
+  "topics": [],
+  "language": null,
+  "stargazers_count": 53,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "MCG-NJU/SteadyDancer",
+  "description": "SteadyDancer: Harmonized and Coherent Human Image Animation with First-Frame Preservation",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 649,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "MDX-Tom/gpt-instruct",
+  "description": "A Codex jailbreak prompt and test pack for gpt. 针对 gpt 系列的 Codex 破甲提示词与测试包。",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 9700,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "MemeCalculate/moyin-creator",
+  "description": "AI 影视生产级工具 | 支持 Seedance 2.0 | 剧本到成片全流程批量化 | AI-powered film production tool with Seedance 2.0 support",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 4690,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 短劇",
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "metasequoiaime/msime-windows",
+  "description": "水杉输入法 Windows 产品：TSF、Server、GUI、设置页与安装器。内测：tg: https://t.me/msimegroup QQ Group: 829919142",
+  "topics": [
+   "chinese",
+   "ime",
+   "input-method",
+   "japanese",
+   "metasequoia",
+   "tsf",
+   "windows",
+   "windows-11"
+  ],
+  "language": "C++",
+  "stargazers_count": 2490,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "Mexes-GM/booru-prompt-gallery",
+  "description": "A multi-provider image gallery that extracts and cleans booru tags into ready-to-use prompts for AI art generation (Illustrious, Pony, SDXL).",
+  "topics": [
+   "ai-art-prompts",
+   "illustrious-xl",
+   "image-generation",
+   "prompt",
+   "stable-diffusion"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 13,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "mexicat/pdoom-video",
+  "description": "Code-rendered music video for \"I'm Upping My P(doom)\"",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 2563,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "程式碼渲染影片"
+   ]
+  }
+ },
+ {
+  "full_name": "microsoft/coreutils",
+  "description": "Coreutils for Windows: Installer & Packaging",
+  "topics": [
+   "command-line-tool",
+   "coreutils",
+   "gnu-coreutils"
+  ],
+  "language": "Rust",
+  "stargazers_count": 5235,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "終端機",
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "mifi/lossless-cut",
+  "description": "The swiss army knife of lossless video/audio editing",
+  "topics": [
+   "codec",
+   "cut",
+   "editor",
+   "ffmpeg",
+   "lossless",
+   "losslesscut",
+   "player",
+   "video",
+   "video-editor",
+   "video-files"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 44433,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "影片剪輯"
+   ]
+  }
+ },
+ {
+  "full_name": "mikf/gallery-dl",
+  "description": "Command-line program to download image galleries and collections from several image hosting sites",
+  "topics": [
+   "danbooru",
+   "deviantart",
+   "downloader",
+   "gallery",
+   "kemono",
+   "mangadex",
+   "pixiv",
+   "tumblr",
+   "twitter"
+  ],
+  "language": "Python",
+  "stargazers_count": 20007,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器",
+    "Danbooru",
+    "Pixiv"
+   ]
+  }
+ },
+ {
+  "full_name": "MisakaZentai/world-execute-me-dsh-pv",
+  "description": "Code-rendered TUI fan PV for Mili world.execute(me); with a DeepSeek Harness-style chat window. MIT code; CC BY-NC-SA 4.0 artwork.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 469,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "程式碼渲染影片"
+   ]
+  }
+ },
+ {
+  "full_name": "mjun0812/flash-attention-prebuild-wheels",
+  "description": "Provide with pre-build flash-attention 2 and 3 package wheels on Linux and Windows using GitHub Actions",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 1767,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "mlabonne/llm-course",
+  "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
+  "topics": [
+   "course",
+   "large-language-models",
+   "llm",
+   "machine-learning",
+   "roadmap"
+  ],
+  "language": null,
+  "stargazers_count": 83408,
+  "gold": {
+   "category": "教育與學習",
+   "subjects": [
+    "LLM 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "mlfoundations/open_clip",
+  "description": "An open source implementation of CLIP.",
+  "topics": [
+   "computer-vision",
+   "contrastive-loss",
+   "deep-learning",
+   "language-model",
+   "multi-modal-learning",
+   "pretrained-models",
+   "pytorch",
+   "zero-shot-classification"
+  ],
+  "language": "Python",
+  "stargazers_count": 14188,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "Mochocyang/QMAI",
+  "description": "青幕AI写作软件，解决长篇小说写作问题，解决小说角色性格不统一，防止人设崩坏。官网：https://www.qmai.pro",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 803,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "moeru-ai/airi",
+  "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+  "topics": [
+   "ai-companion",
+   "ai-vtuber",
+   "airi",
+   "digital-life",
+   "grok-companion",
+   "live2d",
+   "neuro-sama",
+   "neurosama",
+   "openclaw",
+   "vrm",
+   "vtuber"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 50239,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "個人 AI 助理",
+    "角色扮演",
+    "TTS"
+   ]
+  }
+ },
+ {
+  "full_name": "monineko/PromptCard-Studio",
+  "description": "面向 AI 绘图的提示词卡片管理与创作工具，支持 Prompt 分块组合、批量生图、图片管理、画师串探索！特别支持NovelAI自定义提示词组合批量、vibe管理等。",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 94,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "提示詞與標籤",
+    "NovelAI",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "Mooshieblob1/MooshieUI",
+  "description": "A front-end UI for ComfyUI made for beginner level users.",
+  "topics": [
+   "ai-art",
+   "comfyui",
+   "desktop-app",
+   "flux",
+   "generative-ai",
+   "image-generation",
+   "inpainting",
+   "rust",
+   "sdxl",
+   "self-hosted",
+   "stable-diffusion",
+   "svelte",
+   "tailwindcss",
+   "tauri",
+   "text-to-image",
+   "typescript"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 207,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "MotzifyStudio/Motz-Whiteboard",
+  "description": "面向 CG 与视觉创作的本地参考素材库与无限白板 | Local reference library and infinite whiteboard.",
+  "topics": [
+   "cg-art",
+   "electron",
+   "react",
+   "reference-manager",
+   "visual-reference",
+   "whiteboard"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 36,
+  "gold": {
+   "category": "圖片管理與瀏覽",
+   "subjects": [
+    "圖片管理"
+   ]
+  }
+ },
+ {
+  "full_name": "moudanji/NAI5-SKILL",
+  "description": "NAI5提示词书写，漫画和反推  SKILL，由B站和PIXIV上的 某单机游戏爱好者 制作  。这是第五版， 如有问题，请去https://discord.gg/hh8cHUCHCh  或者QQ群 1067312194  反馈。功能 ：除了基础的写提示词之外，他还能够一次性。生成带有分镜的复杂漫画提示词，以及复杂构图，反推能力 特色：这个SKILL写的提示词，除非特殊要求，否则，模型认识的版权角色不会带有眼睛，头发，衣服相关的提示词内容。",
+  "topics": [],
+  "language": null,
+  "stargazers_count": 44,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI",
+    "提示詞與標籤",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "msitarzewski/agency-agents",
+  "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+  "topics": [],
+  "language": "Shell",
+  "stargazers_count": 158635,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "多代理協作",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "mucsbr/ppt-agent-workflow-san",
+  "description": "渐进交互式ppt生成skill",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 645,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "文件與簡報生成",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "multimodal-art-projection/YuE",
+  "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
+  "topics": [
+   "ai",
+   "audio-generation",
+   "deep-learning",
+   "foundation-models",
+   "gpt",
+   "huggingface",
+   "llama",
+   "llms",
+   "music-generation",
+   "style-transfers",
+   "voice-cloning"
+  ],
+  "language": "Python",
+  "stargazers_count": 11103,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": [
+    "音樂生成"
+   ]
+  }
+ },
+ {
+  "full_name": "n0va39/ComfyUI-EXIF-viewer",
+  "description": null,
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 9,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "圖片中繼資料"
+   ]
+  }
+ },
+ {
+  "full_name": "n8n-io/n8n",
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "topics": [
+   "ai",
+   "apis",
+   "automation",
+   "cli",
+   "data-flow",
+   "development",
+   "integration-framework",
+   "integrations",
+   "ipaas",
+   "low-code",
+   "low-code-platform",
+   "mcp",
+   "mcp-client",
+   "mcp-server",
+   "n8n",
+   "no-code",
+   "self-hosted",
+   "typescript",
+   "workflow",
+   "workflow-automation"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 206883,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架"
+   ]
+  }
+ },
+ {
+  "full_name": "nearai/ironclaw",
+  "description": "IronClaw is an Agent OS focused on privacy, security and extensibility",
+  "topics": [
+   "codeact",
+   "openclaw",
+   "rlm",
+   "rust",
+   "wasm"
+  ],
+  "language": "Rust",
+  "stargazers_count": 12646,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架",
+    "個人 AI 助理"
+   ]
+  }
+ },
+ {
+  "full_name": "neilsonnn/image-blaster",
+  "description": "An image-to-world skillset for Claude.",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 11012,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "NevaMind-AI/memUBot",
+  "description": "The Enterprise-Ready OpenClaw. Your Proactive AI Assistant That Remembers Everything",
+  "topics": [
+   "agent",
+   "agent-memory",
+   "openclaw",
+   "proactive"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 460,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "個人 AI 助理"
+   ]
+  }
+ },
+ {
+  "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+  "topics": [
+   "ai-skills",
+   "antigravity",
+   "claude",
+   "claude-code",
+   "codex",
+   "command-line",
+   "copilot",
+   "cursor-ai",
+   "html5",
+   "kiro",
+   "landing-page",
+   "mobile-ui",
+   "qoder",
+   "react",
+   "tailwindcss",
+   "trae",
+   "ui-design",
+   "uikit",
+   "windsurf-ai"
+  ],
+  "language": "Python",
+  "stargazers_count": 134367,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "設計系統",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "nexu-io/open-design",
+  "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.",
+  "topics": [
+   "agent-skills",
+   "ai-design",
+   "byok",
+   "claude-code-for-design",
+   "claude-design",
+   "codex-design",
+   "coding-agents",
+   "cursor-design",
+   "deepseek",
+   "deepseek-harness",
+   "design-systems",
+   "desktop-app",
+   "dsh",
+   "dsh-plugin",
+   "figma-alternative",
+   "hermes-agent",
+   "local-first",
+   "prototyping",
+   "ui-generator",
+   "vibe-coding"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 100318,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "設計系統"
+   ]
+  }
+ },
+ {
+  "full_name": "Niko1221/Strata",
+  "description": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+  "topics": [],
+  "language": "C++",
+  "stargazers_count": 20208,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "本地推理"
+   ]
+  }
+ },
+ {
+  "full_name": "nkxx188/ComfyUI-MiniMaxH3-Easy",
+  "description": "The easiest way to use MiniMax H3. One compact workflow for T2V, I2V, first/last-frame, and reference video generation, with a unified multi-media input, powerful @ references, and inline dialogue blocks. Less wiring. More creative control.",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 824,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "MiniMax H3",
+    "ComfyUI 節點",
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "NousResearch/hermes-agent",
+  "description": "The agent that grows with you",
+  "topics": [
+   "ai",
+   "ai-agent",
+   "ai-agents",
+   "anthropic",
+   "chatgpt",
+   "claude",
+   "claude-code",
+   "codex",
+   "hermes",
+   "hermes-agent",
+   "llm",
+   "nous-research",
+   "openai"
+  ],
+  "language": "Python",
+  "stargazers_count": 252417,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "Agent 框架",
+    "個人 AI 助理"
+   ]
+  }
+ },
+ {
+  "full_name": "nregret/Comfyui-Anima-Tools",
+  "description": "artists-tag/charactors-tag-explorer-nodes",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 365,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "ComfyUI 節點",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "nregret/Comfyui-Easy-RAG",
+  "description": "use rag with model in comfyui",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 69,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "RAG"
+   ]
+  }
+ },
+ {
+  "full_name": "obra/superpowers",
+  "description": "An agentic skills framework & software development methodology that works.",
+  "topics": [
+   "ai",
+   "brainstorming",
+   "coding",
+   "obra",
+   "sdlc",
+   "skills",
+   "subagent-driven-development",
+   "superpowers"
+  ],
+  "language": "Shell",
+  "stargazers_count": 297065,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "open-mmlab/Amphion",
+  "description": "Amphion (/æmˈfaɪən/) is a toolkit for Audio, Music, and Speech Generation. Its purpose is to support reproducible research and help junior researchers and engineers get started in the field of audio, music, and speech generation research and development.",
+  "topics": [
+   "audio-generation",
+   "audio-synthesis",
+   "audioldm",
+   "audit",
+   "emilia",
+   "fastspeech2",
+   "maskgct",
+   "music-generation",
+   "naturalspeech2",
+   "singing-voice-conversion",
+   "speech-synthesis",
+   "text-to-audio",
+   "text-to-speech",
+   "vall-e",
+   "vits",
+   "vocoder",
+   "voice-conversion"
+  ],
+  "language": "Python",
+  "stargazers_count": 10304,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": [
+    "TTS",
+    "音樂生成"
+   ]
+  }
+ },
+ {
+  "full_name": "OpenDCAI/Paper2Any",
+  "description": "Turn paper/text/topic into editable research figures, technical route diagrams, and presentation slides.",
+  "topics": [
+   "agent",
+   "ai",
+   "aippt",
+   "editable-pptx",
+   "langgraph",
+   "paper2slides",
+   "ppt-generator"
+  ],
+  "language": "Python",
+  "stargazers_count": 2805,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "文件與簡報生成"
+   ]
+  }
+ },
+ {
+  "full_name": "ostris/ai-toolkit",
+  "description": "The ultimate training toolkit for finetuning diffusion models",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 12252,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "p-e-w/heretic",
+  "description": "Fully automatic censorship removal for language models",
+  "topics": [
+   "abliteration",
+   "llm",
+   "transformer"
+  ],
+  "language": "Python",
+  "stargazers_count": 34424,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "LLM 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "PicoTrex/Awesome-Nano-Banana-images",
+  "description": "A curated collection of fun and creative examples generated with Nano Banana & Nano Banana Pro🍌, Gemini-2.5-flash-image based model. We also release Nano-consistent-150K openly to support the community's development of image generation and unified models(click to website to see our blog)",
+  "topics": [
+   "awesome",
+   "gemini-2-5-flash-image",
+   "nano-banana"
+  ],
+  "language": null,
+  "stargazers_count": 23856,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Gemini 圖像"
+   ]
+  }
+ },
+ {
+  "full_name": "PIXEL-API/PixelAPI",
+  "description": "基于 Sub2API 二开的 AI API 网关：多平台账号接入、账号共享与广场调度、Token 级计费与分账",
+  "topics": [
+   "account-sharing",
+   "ai-gateway",
+   "api-gateway",
+   "claude",
+   "gemini",
+   "golang",
+   "grok",
+   "llm",
+   "openai",
+   "vue3"
+  ],
+  "language": "Go",
+  "stargazers_count": 67,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "qarmin/czkawka",
+  "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+  "topics": [
+   "cleaner",
+   "duplicates",
+   "multiplatform",
+   "optimization",
+   "optimizer",
+   "rust",
+   "similar-images",
+   "similar-music",
+   "similar-videos"
+  ],
+  "language": "Fluent",
+  "stargazers_count": 34166,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "QJHWC/PaperForge",
+  "description": "End-to-end AI-powered academic paper writing system — from idea generation and literature search to experiment execution, result backfill, and LaTeX paper compilation. Supports multi-LLM routing, SSH remote training, incremental sync, and anti-AI-detection writing style.",
+  "topics": [
+   "academic-writing",
+   "ai",
+   "latex",
+   "llm",
+   "paper-generation",
+   "remote-execution",
+   "ssh"
+  ],
+  "language": "Python",
+  "stargazers_count": 635,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "文件與簡報生成"
+   ]
+  }
+ },
+ {
+  "full_name": "QuantumNous/new-api",
+  "description": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management.",
+  "topics": [
+   "ai-gateway",
+   "claude",
+   "deepseek",
+   "gemini",
+   "newapi",
+   "openai",
+   "rerank"
+  ],
+  "language": "Go",
+  "stargazers_count": 49620,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "quinteroac/ComfyUI-AnimaFastTrain",
+  "description": "Experimental Custom Node for Comfyui to Fast Training Anima Model in Memory",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 27,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "Anima",
+    "LoRA 訓練",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "receyuki/stable-diffusion-prompt-reader",
+  "description": "A simple standalone viewer for reading prompts from Stable Diffusion generated image outside the webui.",
+  "topics": [
+   "ai",
+   "image-generation",
+   "macos",
+   "prompt-engineering",
+   "prompt-toolkit",
+   "python",
+   "stable-diffusion",
+   "stable-diffusion-webui",
+   "tkinter",
+   "windows"
+  ],
+  "language": "Python",
+  "stargazers_count": 1343,
+  "gold": {
+   "category": "圖片管理與瀏覽",
+   "subjects": [
+    "圖片中繼資料"
+   ]
+  }
+ },
+ {
+  "full_name": "RimoChan/Night-Beam",
+  "description": "【Night Beam】去除文本马赛克的随机算法！",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 288,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "RimoChan/pi-librian",
+  "description": "Pi Coding Agent的Librian插件！",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 2,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "RimoChan/rimo-lora-lab",
+  "description": "莉沫酱LoRA实验室！",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 4,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "RimoChan/rimo_color_match",
+  "description": "【RCM】色色匹配算法！",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 11,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "RimoChan/RUM",
+  "description": "【RUM】用跨架构蒸馏代替继续预训练！",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 46,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Flux"
+   ]
+  }
+ },
+ {
+  "full_name": "rotejin/tomari-guruguru",
+  "description": "25方向のマウス追従と口パクに対応したトマリ用ブラウザアバター",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 341,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "router-for-me/CLIProxyAPI",
+  "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
+  "topics": [
+   "antigravity",
+   "claude-code",
+   "cluade",
+   "codex",
+   "devin",
+   "gemini",
+   "muse",
+   "openai"
+  ],
+  "language": "Go",
+  "stargazers_count": 54702,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道",
+    "Claude Code",
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "salmantais961-boop/ArtistSourceGrabber",
+  "description": "Local multi-source artist artwork grabber and image tagging WebUI. Pure VIBE Coding / AI-assisted experimental project.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 11,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "saltysalrua/Novelai-harness",
+  "description": null,
+  "topics": [],
+  "language": "Dart",
+  "stargazers_count": 22,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI"
+   ]
+  }
+ },
+ {
+  "full_name": "Sanitised/ST-android",
+  "description": "SillyTavern runner for Android",
+  "topics": [],
+  "language": "Kotlin",
+  "stargazers_count": 130,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "角色扮演"
+   ]
+  }
+ },
+ {
+  "full_name": "scvxzf1/anima_lora_webui",
+  "description": "Anima LoRA WebUI startup-Linux package",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 21,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "Anima",
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "shadcn-ui/ui",
+  "description": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+  "topics": [
+   "ai",
+   "base-ui",
+   "components",
+   "gen-ui",
+   "generative-ai",
+   "generative-ui",
+   "laravel",
+   "nextjs",
+   "radix-ui",
+   "react",
+   "react-aria",
+   "react-aria-components",
+   "shadcn",
+   "tailwindcss",
+   "tanstack",
+   "ui",
+   "vite"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 125248,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "UI 元件庫"
+   ]
+  }
+ },
+ {
+  "full_name": "shira-qwq/lora-dataset-studio",
+  "description": "Local-first LoRA image dataset analysis, clustering, inspection, organization, and export.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 4,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理"
+   ]
+  }
+ },
+ {
+  "full_name": "ShiroEirin/comfyui-good-anima",
+  "description": null,
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 482,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "ShiroEirin/ComfyUI_MCP_Skills",
+  "description": "Agent-native ComfyUI workflow execution over MCP 2.0",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 6,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "MCP"
+   ]
+  }
+ },
+ {
+  "full_name": "shuakami/qq-chat-exporter",
+  "description": "🚀 QQ聊天记录、表情包导出工具 | 自动化提取图片/文字/图片消息，支持TXT/JSON导出，高效备份，支持NT QQ ",
+  "topics": [
+   "chat-exports",
+   "electron",
+   "export",
+   "exporter",
+   "javascript",
+   "qq",
+   "qq-expoter",
+   "qq-nt",
+   "qqnt"
+  ],
+  "language": "Rust",
+  "stargazers_count": 5562,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "QQ",
+    "聊天記錄分析"
+   ]
+  }
+ },
+ {
+  "full_name": "sierra-research/tau2-bench",
+  "description": "τ-Bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+  "topics": [
+   "ai",
+   "benchmark",
+   "conversational-agents",
+   "language-model-agent",
+   "llm"
+  ],
+  "language": "Python",
+  "stargazers_count": 2201,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "AI 模型評測"
+   ]
+  }
+ },
+ {
+  "full_name": "sirmalloc/ccstatusline",
+  "description": "🚀 Beautiful highly customizable statusline for Claude Code CLI with powerline support, themes, and more.",
+  "topics": [
+   "ai-tools",
+   "claude-code",
+   "cli",
+   "developer-tools",
+   "git",
+   "powerline",
+   "statusbar",
+   "statusline",
+   "terminal",
+   "themeing"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 13238,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "終端機"
+   ]
+  }
+ },
+ {
+  "full_name": "sligter/LandPPT",
+  "description": "一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。",
+  "topics": [
+   "ai",
+   "llm",
+   "ppt"
+  ],
+  "language": "Python",
+  "stargazers_count": 3617,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "文件與簡報生成"
+   ]
+  }
+ },
+ {
+  "full_name": "SMNETSTUDIO/WeChat-AI",
+  "description": "WeChat AI - 自托管微信角色扮演对话服务",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 1944,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "微信",
+    "角色扮演"
+   ]
+  }
+ },
+ {
+  "full_name": "songquanpeng/one-api",
+  "description": "LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
+  "topics": [
+   "api",
+   "api-gateway",
+   "azure-openai-api",
+   "chatgpt",
+   "claude",
+   "ernie-bot",
+   "gemini",
+   "gpt",
+   "openai",
+   "openai-api",
+   "proxy"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 37114,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "sorryhyun/anima_lora",
+  "description": "optimized anima lora training script",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 125,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "Anima",
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "spawner1145/sd-samplers",
+  "description": "一些乱写的sd生图采样器(",
+  "topics": [
+   "comfyui-custom-node",
+   "stable-diffusion-webui-plugin"
+  ],
+  "language": "Python",
+  "stargazers_count": 40,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "Stable Diffusion WebUI"
+   ]
+  }
+ },
+ {
+  "full_name": "spawner1145/video2vmd",
+  "description": "摸鱼写的玩意",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 2,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "spawner1145/wd14-inference-webui",
+  "description": "和webui分离开来的支持api调用的wd14",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 9,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理"
+   ]
+  }
+ },
+ {
+  "full_name": "stablyai/orca",
+  "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+  "topics": [
+   "ade",
+   "agent-ide",
+   "ai-agents",
+   "claude-code",
+   "cli",
+   "codex",
+   "cursor-agent",
+   "devtools",
+   "ghostty",
+   "ide",
+   "mobile-app",
+   "opencode",
+   "orchestration",
+   "parallel-agents",
+   "pi",
+   "terminal",
+   "worktrees",
+   "yc-backed"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 88926,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "多代理協作",
+    "Claude Code"
+   ]
+  }
+ },
+ {
+  "full_name": "starik222/BooruDatasetTagManager",
+  "description": null,
+  "topics": [],
+  "language": "C#",
+  "stargazers_count": 1950,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "starship/starship",
+  "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+  "topics": [
+   "bash",
+   "fish",
+   "fish-prompt",
+   "fish-theme",
+   "oh-my-zsh",
+   "powershell",
+   "rust",
+   "shell-prompt",
+   "starship",
+   "zsh",
+   "zsh-prompt",
+   "zsh-theme"
+  ],
+  "language": "Rust",
+  "stargazers_count": 60199,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "終端機"
+   ]
+  }
+ },
+ {
+  "full_name": "storyAura/astrbot_plugin_biliVideo",
+  "description": "biliVideo · AstrBot B 站视频解析与 AI 总结",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 52,
+  "gold": {
+   "category": "聊天機器人與 IM",
+   "subjects": [
+    "AstrBot"
+   ]
+  }
+ },
+ {
+  "full_name": "storyAura/BooruDatasetTagManagerPlus",
+  "description": "Windows tag editor for LoRA / character image datasets: booru tag editing with Chinese UI & translation, WD14/PixAI/CL ONNX auto-tagging, LLM captioning, AI character-tag audit (dual-character support), RMBG background removal, image editor, video frame extraction. Fork of starik222/BooruDatasetTagManager.",
+  "topics": [
+   "anime",
+   "booru",
+   "csharp",
+   "danbooru",
+   "dataset-tagging",
+   "dotnet",
+   "image-tagging",
+   "llm",
+   "lora",
+   "onnx",
+   "stable-diffusion",
+   "wd14-tagger",
+   "winforms"
+  ],
+  "language": "C#",
+  "stargazers_count": 18,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "storyAura/BooruDownload",
+  "description": "A fast Windows-friendly batch downloader for Danbooru and compatible booru sites",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 7,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "storyAura/DLSS5-Comfyui",
+  "description": "ComfyUI custom node for DLSS5 Feature 18 same-resolution neural render (RTX 30/40/50).",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 17,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "超解析"
+   ]
+  }
+ },
+ {
+  "full_name": "storyAura/NLapt",
+  "description": " for training-set curation (LoRA / image-generation models), dataset cleaning, or any workflow that pairs images",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 5,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理"
+   ]
+  }
+ },
+ {
+  "full_name": "storyicon/comfyui_segment_anything",
+  "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The comfyui version of sd-webui-segment-anything.",
+  "topics": [
+   "comfyui",
+   "custom-nodes",
+   "groundingdino",
+   "sam",
+   "segment-anything",
+   "stable-diffusion"
+  ],
+  "language": "Python",
+  "stargazers_count": 1116,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "物件偵測與分割",
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "SUC-DriverOld/MSST-WebUI",
+  "description": "A WebUI app for Music-Source-Separation-Training and we packed UVR together!",
+  "topics": [
+   "msst",
+   "music",
+   "python"
+  ],
+  "language": "Python",
+  "stargazers_count": 1269,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "sunny2109/SAFMN",
+  "description": "[ICCV 2023] Spatially-Adaptive Feature Modulation for Efficient Image Super-Resolution; runner-up method for the model complexity track in NTIRE2023 Efficient SR challenge",
+  "topics": [
+   "compressed-image-enhancement",
+   "image-restoration",
+   "pytorch",
+   "real-time",
+   "super-resolution"
+  ],
+  "language": "Python",
+  "stargazers_count": 396,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "超解析"
+   ]
+  }
+ },
+ {
+  "full_name": "taichuy/1flowbase",
+  "description": "Build for agents — from the AI Gateway to the entire application stack.",
+  "topics": [
+   "agent-native",
+   "agent-observability",
+   "ai-app-builder",
+   "ai-gateway",
+   "claude-api",
+   "crud-api",
+   "data-modeling",
+   "llm-gateway",
+   "llm-observability",
+   "llm-orchestration",
+   "llm-router",
+   "mcp",
+   "mcp-gateway",
+   "mcp-server",
+   "model-context-protocol",
+   "multi-model",
+   "openai-compatible",
+   "react",
+   "self-hosted",
+   "workflow-engine"
+  ],
+  "language": "Rust",
+  "stargazers_count": 272,
+  "gold": {
+   "category": "API 閘道與帳號工具",
+   "subjects": [
+    "API 閘道"
+   ]
+  }
+ },
+ {
+  "full_name": "tencent-ailab/IP-Adapter",
+  "description": "The image prompt adapter is designed to enable a pretrained text-to-image diffusion model to generate images with image prompt. ",
+  "topics": [],
+  "language": "Jupyter Notebook",
+  "stargazers_count": 6698,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "Tera-Dark/ComfyUI-Universal-Extractor",
+  "description": "A ComfyUI toolkit for prompt library management, artist extraction, and searchable output review.",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 4,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "提示詞與標籤",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "Tera-Dark/Tag-Master",
+  "description": "A tool site dedicated to bulk tagging for AI painting",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 3,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理",
+    "提示詞與標籤"
+   ]
+  }
+ },
+ {
+  "full_name": "thedogecraft/sparkle",
+  "description": "A Windows app to debloat and optimize your PC",
+  "topics": [
+   "debloater",
+   "opimization",
+   "registry-tweaks",
+   "windows",
+   "windows-10-debloat",
+   "windows-10-optimization",
+   "windows-cleaner",
+   "windows-debloat",
+   "windows-optimization",
+   "windows-optimization-tool",
+   "windows-optimizer",
+   "windows-tweaks"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 2156,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "ThetaCursed/Anima-Style-Explorer",
+  "description": "Anima 2B Style Explorer - A fast, visual reference library for 40,000+ artist styles optimized for the Anima 2B model and Danbooru tagging system.",
+  "topics": [
+   "ai-art",
+   "anima-2b",
+   "danbooru",
+   "style-guide"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 280,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "Anima",
+    "畫師風格"
+   ]
+  }
+ },
+ {
+  "full_name": "THU-MAIC/OpenMAIC",
+  "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 40290,
+  "gold": {
+   "category": "教育與學習",
+   "subjects": [
+    "AI 家教",
+    "多代理協作"
+   ]
+  }
+ },
+ {
+  "full_name": "tiann/hapi",
+  "description": "App for Codex / Claude Code / Pi / OpenCode / Kimi Code / Grok Build, vibe coding anytime, anywhere",
+  "topics": [
+   "app",
+   "claude-code",
+   "codex",
+   "gemini-cli",
+   "opencode",
+   "remote-control"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 5209,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "Codex",
+    "OpenCode"
+   ]
+  }
+ },
+ {
+  "full_name": "Tichau/FileConverter",
+  "description": "File Converter is a very simple tool which allows you to convert and compress files using the context menu in windows explorer.",
+  "topics": [],
+  "language": "C#",
+  "stargazers_count": 15350,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "Windows 工具"
+   ]
+  }
+ },
+ {
+  "full_name": "TIGER-AI-Lab/TheoremExplainAgent",
+  "description": "Official Repo for \"TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding\" [ACL 2025 oral]",
+  "topics": [
+   "llm-agents",
+   "manim",
+   "manim-animations",
+   "manim-video",
+   "rag"
+  ],
+  "language": "Python",
+  "stargazers_count": 1511,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "教學影片",
+    "程式碼渲染影片"
+   ]
+  }
+ },
+ {
+  "full_name": "TikHub/TikHub-Multi-Functional-Downloader",
+  "description": "Cross-platform GUI tool for downloading watermark-free videos from TikTok, Douyin and more. Supports batch downloads and user profile scraping. 跨平台GUI工具，用于无水印下载TikTok、抖音等平台视频。支持批量下载和用户主页视频批量获取。",
+  "topics": [
+   "douyin",
+   "douyin-api",
+   "douyin-download",
+   "downloader",
+   "gui-downloader",
+   "tiktok",
+   "tiktok-api",
+   "tiktok-downloader",
+   "tiktok-scraper",
+   "tiktok-tool"
+  ],
+  "language": "Python",
+  "stargazers_count": 184,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Tomotsugu-dev/Hindsight",
+  "description": "Local-first desktop activity tracker — see where your hours go, with on-device AI daily summaries and optional multi-device sync",
+  "topics": [
+   "activity-tracker",
+   "ai",
+   "cross-platform",
+   "daily-reports",
+   "llm",
+   "local-first",
+   "privacy",
+   "screen-time",
+   "time-tracker",
+   "time-tracking-app"
+  ],
+  "language": "Rust",
+  "stargazers_count": 136,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "桌面生產力"
+   ]
+  }
+ },
+ {
+  "full_name": "trailhq/Graft",
+  "description": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+  "topics": [
+   "ai-agents",
+   "anthropic",
+   "claude-code",
+   "cli",
+   "code-graph",
+   "codex",
+   "context-engineering",
+   "cursor",
+   "developer-tools",
+   "gemini",
+   "knowledge-graph",
+   "llm",
+   "mcp",
+   "mcp-server",
+   "open-source",
+   "openai",
+   "tree-sitter"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 9791,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Claude Code",
+    "Codex"
+   ]
+  }
+ },
+ {
+  "full_name": "tsunehimatoi/psd2live",
+  "description": "Turn layered PSDs into editable Live2D models — automatic rigging, mesh/deformer generation, physics, animation, and .cmo3/ .moc3 export.",
+  "topics": [],
+  "language": "Kotlin",
+  "stargazers_count": 605,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "tt-a1i/archify",
+  "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+  "topics": [
+   "agent-skills",
+   "ai-agents",
+   "architecture-diagram",
+   "claude-code",
+   "claude-skills",
+   "codex",
+   "coding-agents",
+   "deepseek-harness",
+   "developer-tools",
+   "diagrams",
+   "diagrams-as-code",
+   "dsh-plugin",
+   "flowchart",
+   "llm",
+   "mermaid",
+   "opencode",
+   "sequence-diagram",
+   "software-architecture",
+   "system-design",
+   "visualization"
+  ],
+  "language": "JavaScript",
+  "stargazers_count": 81497,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "uiverse-io/galaxy",
+  "description": "The largest Open-Source UI Library! Community-made and free to use. Made with either CSS or Tailwind.",
+  "topics": [
+   "community",
+   "css",
+   "tailwind",
+   "ui"
+  ],
+  "language": "HTML",
+  "stargazers_count": 13444,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "UI 元件庫"
+   ]
+  }
+ },
+ {
+  "full_name": "UlionTse/translators",
+  "description": "Translators is a library that aims to bring free, multiple, enjoyable translations to individuals and students in Python.  「翻译官」是一个旨在用Python为个人和学生带来免费、多样、愉快翻译的库。",
+  "topics": [
+   "alibaba",
+   "argos",
+   "baidu",
+   "bing",
+   "caiyun",
+   "deepl",
+   "google",
+   "iciba",
+   "iflytek",
+   "itranslate",
+   "lara",
+   "lingvanex",
+   "modernmt",
+   "mymemory",
+   "papago",
+   "reverso",
+   "sogou",
+   "tencent",
+   "yandex",
+   "youdao"
+  ],
+  "language": "Python",
+  "stargazers_count": 2692,
+  "gold": {
+   "category": "其他",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "ultraworkers/claw-code",
+  "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 194985,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "Unclecheng-li/AI_Animation",
+  "description": "本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。",
+  "topics": [
+   "ai",
+   "ai-agents",
+   "css",
+   "dsh-plugin",
+   "dsh-plugins",
+   "front-end",
+   "html5",
+   "javascript",
+   "ppt",
+   "prompt",
+   "prompt-engineering",
+   "skill",
+   "skills"
+  ],
+  "language": "HTML",
+  "stargazers_count": 1482,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "3D 與動態網頁"
+   ]
+  }
+ },
+ {
+  "full_name": "unclecode/crawl4ai",
+  "description": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key.",
+  "topics": [
+   "ai",
+   "ai-agents",
+   "crawler",
+   "data-extraction",
+   "llm",
+   "markdown",
+   "mcp",
+   "open-source",
+   "playwright",
+   "python",
+   "rag",
+   "scraper",
+   "web-crawler",
+   "web-crawling",
+   "web-scraping"
+  ],
+  "language": "Python",
+  "stargazers_count": 85133,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "爬蟲"
+   ]
+  }
+ },
+ {
+  "full_name": "unknowlei/minimax-h3-opencode-skills",
+  "description": "OpenCode skill suite for MiniMax H3 directing, routing, multishot planning, prompt generation, and review.",
+  "topics": [
+   "agent-skills",
+   "minimax-h3",
+   "multimodal",
+   "opencode",
+   "prompt-engineering",
+   "video-generation"
+  ],
+  "language": "PowerShell",
+  "stargazers_count": 122,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "MiniMax H3",
+    "OpenCode",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "vercel-labs/agent-browser",
+  "description": "Browser automation CLI for AI agents",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 43755,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "瀏覽器自動化"
+   ]
+  }
+ },
+ {
+  "full_name": "victorchen96/deepseek_v4_rolepaly_instruct",
+  "description": "对于DeepSeek-V4角色扮演的特殊控制指令的说明",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 2323,
+  "gold": {
+   "category": "LLM 應用與框架",
+   "subjects": [
+    "角色扮演"
+   ]
+  }
+ },
+ {
+  "full_name": "Vincentwei1021/anything2explainer",
+  "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+  "topics": [
+   "agent-skills",
+   "ai-agents",
+   "ai-video",
+   "claude-code",
+   "claude-code-skill",
+   "codex",
+   "edge-tts",
+   "educational-video",
+   "explainer-video",
+   "kokoro",
+   "motion-graphics",
+   "multi-agent",
+   "react",
+   "remotion",
+   "text-to-video",
+   "tts",
+   "typescript",
+   "video-generation"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 2390,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "Claude Code",
+    "Agent Skills",
+    "教學影片"
+   ]
+  }
+ },
+ {
+  "full_name": "VoltAgent/awesome-design-md",
+  "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+  "topics": [
+   "awesome-list",
+   "design-md",
+   "design-system",
+   "design-tokens",
+   "figma",
+   "google-stitch",
+   "landing-page",
+   "vibe-coding",
+   "vibe-design",
+   "vibecoding"
+  ],
+  "language": null,
+  "stargazers_count": 120116,
+  "gold": {
+   "category": "前端與設計",
+   "subjects": [
+    "設計系統",
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "voquill/voquill",
+  "description": "Open source voice dictation technology",
+  "topics": [
+   "agent",
+   "agentic-ai",
+   "dictation",
+   "free",
+   "local-ai",
+   "open-source",
+   "speech-to-text",
+   "tauri",
+   "voquill",
+   "whisper"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 1012,
+  "gold": {
+   "category": "音訊與語音",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "WalkingMeatAxolotl/AnimaLoraStudio",
+  "description": "Anima/Krea2 LoRA 训练工具集，附带完整 Web 工作台 (AnimaLoraStudio)",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 210,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練",
+    "Anima"
+   ]
+  }
+ },
+ {
+  "full_name": "WalkingMeatAxolotl/ComfyUI-Danbooru-Gallery",
+  "description": "D站画廊插件",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 13,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "Danbooru"
+   ]
+  }
+ },
+ {
+  "full_name": "waooAI/waoowaoo",
+  "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
+  "topics": [
+   "ai-agent",
+   "ai-agents",
+   "automation",
+   "film-production",
+   "generative-ai",
+   "short-drama",
+   "storyboard",
+   "video-generation"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 14475,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 短劇",
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "wbh604/UZI-Skill",
+  "description": "冰冷的钱就这样流进我温暖的口袋-游资（UZI）Skills — 让我们欢迎，股海贼王！66位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 · A股/港股/美股 ",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 7149,
+  "gold": {
+   "category": "其他",
+   "subjects": [
+    "Agent Skills",
+    "量化與交易"
+   ]
+  }
+ },
+ {
+  "full_name": "wechat-article/wechat-article-exporter",
+  "description": "一款在线的 微信公众号文章批量下载 工具，支持导出阅读量与评论数据，无需搭建任何环境，可通过 在线网站 使用，支持 docker 私有化部署和 Cloudflare 部署。  支持下载各种文件格式，其中 HTML 格式可100%还原文章排版与样式。",
+  "topics": [
+   "download",
+   "wechat",
+   "wechat-article",
+   "wechat-download"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 13043,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "微信",
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Wenaka2004/auto-censor",
+  "description": "基于yolov8的自动打码工具，支持马赛克/贴图",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 44,
+  "gold": {
+   "category": "電腦視覺與影像處理",
+   "subjects": [
+    "物件偵測與分割"
+   ]
+  }
+ },
+ {
+  "full_name": "WhitecrowAurora/lora-rescripts",
+  "description": "SD-re(Refactor)Scripts is a maintained fork / continuation of LoRA-scripts (a.k.a. SD-Trainer).",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 28,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練"
+   ]
+  }
+ },
+ {
+  "full_name": "wildminder/ComfyUI-DyPE",
+  "description": "ComfyUI DyPE+SEGA, enabling artifact-free 4K+ image generation: Z-Image, Qwen, Flux, Krea2",
+  "topics": [
+   "comfyui",
+   "comfyui-nodes",
+   "flux",
+   "high-resolution",
+   "nunchaku",
+   "qwen",
+   "t2i",
+   "text2image"
+  ],
+  "language": "Python",
+  "stargazers_count": 633,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "Flux"
+   ]
+  }
+ },
+ {
+  "full_name": "willmiao/ComfyUI-Lora-Manager",
+  "description": "LoRA Manager for ComfyUI - A powerful extension for organizing, previewing, and integrating LoRA models with metadata and workflow support.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 1525,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "Windecay/ComfyUI-ReservedVRAM",
+  "description": "A simple node that can dynamically adjust the reserved memory of a workflow in real-time, used to avoid the utilization of shared memory.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 446,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點"
+   ]
+  }
+ },
+ {
+  "full_name": "wochenlong/lora-scripts-next",
+  "description": "Easy LoRA training for everyone. Supports Anima LoRA, Anima Edit, Fast mode, Anima full finetuning, SDXL and Flux.",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 257,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "LoRA 訓練",
+    "Anima"
+   ]
+  }
+ },
+ {
+  "full_name": "wuwangzhang1216/DirectorSKILL",
+  "description": "Claude Code skill for AI filmmaking — shot lists, keyframe & video prompts, with 10 director-style overlays (Spielberg, Kubrick, Wong Kar-wai, Nolan...).",
+  "topics": [
+   "ai-filmmaking",
+   "cinematic",
+   "claude-code",
+   "claude-skill",
+   "director",
+   "kling",
+   "prompt-engineering",
+   "runway",
+   "storyboard",
+   "veo"
+  ],
+  "language": null,
+  "stargazers_count": 192,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "Claude Code",
+    "Agent Skills",
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "x-cmd/x-cmd",
+  "description": "Shell Superpowers for AI Agents.",
+  "topics": [
+   "agent",
+   "ai",
+   "bash",
+   "cli",
+   "cloud",
+   "shell",
+   "zsh"
+  ],
+  "language": "Awk",
+  "stargazers_count": 4705,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "終端機"
+   ]
+  }
+ },
+ {
+  "full_name": "xai-org/grok-build",
+  "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+  "topics": [],
+  "language": "Rust",
+  "stargazers_count": 27302,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": []
+  }
+ },
+ {
+  "full_name": "xuejianxianzun/PixivBatchDownloader",
+  "description": "Powerful Pixiv batch downloader. Batch download artworks and novels, filter works, rename when downloading, convert animated images, and more. 浏览器扩展程序，批量下载 Pixiv 上的插画和小说。过滤作品、下载时重命名、转换动态图片等。",
+  "topics": [
+   "chrome",
+   "chrome-extension",
+   "downloader",
+   "edge-extension",
+   "firefox-extension",
+   "illust",
+   "novel",
+   "pixiv",
+   "pixiv-downloader"
+  ],
+  "language": "TypeScript",
+  "stargazers_count": 5676,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "Pixiv",
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "Xuness/dataset-annotation-studio",
+  "description": "Desktop-first AI image dataset annotation studio",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 9,
+  "gold": {
+   "category": "LoRA 訓練與資料集",
+   "subjects": [
+    "資料集整理"
+   ]
+  }
+ },
+ {
+  "full_name": "xykt/IPQuality",
+  "description": "IP质量检测脚本 - IP Quality Check Script",
+  "topics": [],
+  "language": "Shell",
+  "stargazers_count": 10661,
+  "gold": {
+   "category": "Windows 與系統工具",
+   "subjects": [
+    "網路代理"
+   ]
+  }
+ },
+ {
+  "full_name": "YILING0013/novelai_local_web",
+  "description": "NovelAI图像生成脚本",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 21,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI"
+   ]
+  }
+ },
+ {
+  "full_name": "YizukiAme/SpiralMAIC",
+  "description": "An AI classroom that remembers — learn it, forget a little, teach it back, keep it.",
+  "topics": [],
+  "language": "TypeScript",
+  "stargazers_count": 9,
+  "gold": {
+   "category": "教育與學習",
+   "subjects": [
+    "AI 家教"
+   ]
+  }
+ },
+ {
+  "full_name": "yt-dlp/yt-dlp",
+  "description": "A feature-rich command-line audio/video downloader",
+  "topics": [
+   "cli",
+   "downloader",
+   "python",
+   "sponsorblock",
+   "youtube-dl",
+   "youtube-downloader",
+   "yt-dlp"
+  ],
+  "language": "Python",
+  "stargazers_count": 196577,
+  "gold": {
+   "category": "下載與爬蟲",
+   "subjects": [
+    "下載器"
+   ]
+  }
+ },
+ {
+  "full_name": "zai-org/SCAIL",
+  "description": "SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations (CVPR 2026 Findings)",
+  "topics": [
+   "character-animation",
+   "video-generation",
+   "video2video"
+  ],
+  "language": "Python",
+  "stargazers_count": 1055,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "zai-org/SCAIL-Pose",
+  "description": "Pose Extraction & Rendering for SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations",
+  "topics": [
+   "character-animation",
+   "video-generation",
+   "video2video"
+  ],
+  "language": "Python",
+  "stargazers_count": 229,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "AI 影片生成"
+   ]
+  }
+ },
+ {
+  "full_name": "zanllp/infinite-image-browsing",
+  "description": "A full-featured image/video management app with AI-powered organization and semantic search. Supports metadata from  SD-webui, ComfyUI, Fooocus, NovelAI, StableSwarmUI, and more. Available as standalone app, SD-webui extension, or library.",
+  "topics": [
+   "audio",
+   "comfyui",
+   "extension",
+   "file-explorer",
+   "file-server",
+   "fooocus",
+   "gallery",
+   "image-previewer",
+   "novelai",
+   "previewer",
+   "remote-explorer",
+   "skills",
+   "stable-diffusion-webui",
+   "stable-diffusion-webui-plugin",
+   "stable-swarm-ui",
+   "stableswarmui",
+   "video",
+   "video-player"
+  ],
+  "language": "Vue",
+  "stargazers_count": 1356,
+  "gold": {
+   "category": "圖片管理與瀏覽",
+   "subjects": [
+    "圖片管理",
+    "圖片中繼資料"
+   ]
+  }
+ },
+ {
+  "full_name": "zhaoxuya520/reverse-skill",
+  "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+  "topics": [],
+  "language": "PowerShell",
+  "stargazers_count": 40637,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills"
+   ]
+  }
+ },
+ {
+  "full_name": "zhongpei/Comfyui_image2prompt",
+  "description": "image to prompt by vikhyatk/moondream1",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 388,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "ComfyUI 節點",
+    "提示詞與標籤"
+   ]
+  }
+ },
+ {
+  "full_name": "zhouxiaoka/autoclip",
+  "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+  "topics": [
+   "ai-agent",
+   "ai-video-editor",
+   "content-repurposing",
+   "desktop-app",
+   "douyin",
+   "instagram-reels",
+   "mcp",
+   "open-source",
+   "podcast",
+   "subtitles",
+   "tiktok",
+   "video-clipping",
+   "video-editing-software",
+   "xiaohongshu",
+   "youtube-shorts"
+  ],
+  "language": "Python",
+  "stargazers_count": 9298,
+  "gold": {
+   "category": "影片與動畫",
+   "subjects": [
+    "影片剪輯"
+   ]
+  }
+ },
+ {
+  "full_name": "zhulinyv/Auto-NovelAI-Refactor",
+  "description": "带有 WebUI 的 NovelAI 批量生成工具, 支持批量文生图, 图生图, 局部重绘, 导演工具, 角色分区, 角色参考, 支持 wildcards, 支持超分降噪, 支持元数据解析及抹除, 支持反推 tag, 支持图片筛选, 插件加载!",
+  "topics": [],
+  "language": "JavaScript",
+  "stargazers_count": 115,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI"
+   ]
+  }
+ },
+ {
+  "full_name": "zhulinyv/Semi-Auto-NovelAI-to-Pixiv",
+  "description": "带有 WebUI 的 NovelAI 量产工具, 实现了批量文生图; 批量图生图; 视频转绘; 分块重绘; 批量 Vibe; 批量局部重绘; 批量超分降噪; 批量自动打码; 批量添加水印; 批量上传 Pixiv; 图片筛选; 批量抹除, 还原或导出生成信息; 法术解析; 多模型反推提示词; ChatGPT; 动态加载插件; 自动 roll 画风串; 批量 Enhance; tag选择器; 涂鸦重绘; 图片压缩整理; 批量AI工具; wildcard; ...",
+  "topics": [
+   "automation",
+   "batch",
+   "batch-script",
+   "chatgpt",
+   "gradio",
+   "novelai",
+   "pixiv",
+   "python",
+   "stable-diffusion-webui",
+   "waifu2x",
+   "webui"
+  ],
+  "language": "Python",
+  "stargazers_count": 426,
+  "gold": {
+   "category": "AI 繪圖與 ComfyUI",
+   "subjects": [
+    "NovelAI",
+    "Pixiv"
+   ]
+  }
+ },
+ {
+  "full_name": "Zibor233/project-softcopyright-generator-Skill",
+  "description": "Project SoftCopyright Generator-Skill，它可以直接读取本地项目代码，自动分析项目结构、功能模块和技术栈，先生成软著建议稿与代码抽取方案，在确认后继续输出软著申请信息、系统说明文档和源代码文档。",
+  "topics": [],
+  "language": "Python",
+  "stargazers_count": 6,
+  "gold": {
+   "category": "AI 編程代理",
+   "subjects": [
+    "Agent Skills",
+    "文件與簡報生成"
+   ]
+  }
+ }
+]

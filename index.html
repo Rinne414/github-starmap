@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 星圖 · GitHub Starmap</title>
+<meta name="description" content="把 GitHub 帳號的 repo 和 Star 畫成 3D 星圖，附趣味評分卡。只讀取公開資料。">
+<meta name="theme-color" content="#0a0d12">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div id="graph" aria-hidden="true"></div>
+
+<main id="landing" class="landing">
+  <button id="lang-landing" class="lang" type="button"></button>
+  <div class="landing-inner">
+    <h1 id="landing-title" class="brand"></h1>
+    <p id="tagline" class="tagline"></p>
+    <form id="lookup-form" class="lookup" novalidate>
+      <input id="lookup" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+      <button id="lookup-go" class="btn primary" type="submit"></button>
+    </form>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <p id="privacy" class="fine"></p>
+    <p id="rate-note" class="fine"></p>
+    <p id="not-official" class="fine"></p>
+  </div>
+</main>
+
+<div id="controls" class="panel" hidden>
+  <div class="who-row">
+    <img id="avatar" class="avatar" alt="" width="36" height="36">
+    <div class="who-text">
+      <h1 id="who"></h1>
+      <div id="counts" class="sub"></div>
+    </div>
+    <button id="lang-toggle" class="lang small" type="button"></button>
+  </div>
+  <div id="truncated" class="sub warn" hidden></div>
+  <input id="search" type="search" autocomplete="off">
+  <ul id="results"></ul>
+  <div id="legend" class="legend"></div>
+  <div class="actions">
+    <button id="open-card" class="btn" type="button"></button>
+    <button id="another" class="btn" type="button"></button>
+  </div>
+</div>
+
+<aside id="detail" class="panel" aria-live="polite">
+  <button class="close" id="close" type="button">×</button>
+  <div id="detail-body"></div>
+</aside>
+
+<div id="hint" class="panel" hidden></div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
